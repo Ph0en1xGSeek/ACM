@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1443851344 source:c:\users\ph0en1x\desktop\rotating numbers\main.cpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+

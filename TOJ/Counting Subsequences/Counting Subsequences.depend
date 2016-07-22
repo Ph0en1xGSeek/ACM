@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1439899457 source:c:\users\ph0en1x\desktop\counting subsequences\main.cpp
+	<iostream>
+	<cstdio>
+	<map>
+

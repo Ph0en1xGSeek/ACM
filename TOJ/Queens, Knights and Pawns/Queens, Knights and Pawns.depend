@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1439610542 source:c:\users\ph0en1x\desktop\queens, knights and pawns\main.cpp
+	<iostream>
+	<cstdio>
+	<cstring>
+

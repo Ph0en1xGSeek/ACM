@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1438837486 source:c:\users\phoenix geek\desktop\bomb\main.cpp
+	<iostream>
+	<cstdio>
+	<cstring>
+

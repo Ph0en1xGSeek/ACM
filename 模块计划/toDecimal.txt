@@ -1,0 +1,21 @@
+//binary to decimal
+int toDeci(string num , int transFrom)
+{
+    int wei;
+    int deci = 0;
+    int len = num.length();
+    for (unsigned i = 0 ; i < len ; i++)
+    {
+
+        if(num[i] >= '0' && num[i] <= '9')
+            wei = static_cast<int>(num[i] - '0');
+        if(num[i] >= 'A' && num[i] <= 'Z')
+            wei = static_cast<int>(num[i] - 'A' + 10);
+        if(num[i] >= 'a' && num[i] <= 'z')
+            wei = static_cast<int>(num[i] - 'a' + 36);
+        deci = deci * transFrom + wei;
+
+
+    }
+    return deci;
+}

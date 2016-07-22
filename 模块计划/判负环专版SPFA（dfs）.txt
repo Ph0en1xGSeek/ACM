@@ -1,0 +1,21 @@
+int spfa_dfs(int u)
+{
+    vis[u]=1;
+    for(int k=f[u]; k!=0; k=e[k].next)
+    {
+        int v=e[k].v,w=e[k].w;
+        if( d[u]+w < d[v] )
+        {
+            d[v]=d[u]+w;
+            if(!vis[v])
+            {
+                if(spfa_dfs(v))
+                    return 1;
+            }
+            else
+                return 1;
+        }
+    }
+    vis[u]=0;
+    return 0;
+}

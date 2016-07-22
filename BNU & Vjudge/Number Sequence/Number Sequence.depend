@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1437991577 source:c:\users\phoenix geek\desktop\number sequence\main.cpp
+	<stdio.h>
+	<cstring>
+
+1440589162 source:c:\users\tjuacm_lyj\desktop\Ææ¿á\bnu & vjudge\number sequence\main.cpp
+	<iostream>
+	<cstring>
+	<stdio.h>
+

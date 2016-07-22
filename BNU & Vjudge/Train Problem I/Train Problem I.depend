@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1436856634 source:c:\users\phoenix geek\desktop\train problem i\main.cpp
+	<iostream>
+	<stack>
+	<string>
+

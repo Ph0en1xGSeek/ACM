@@ -1,0 +1,35 @@
+This progam will convert pounds and ounces to kilograms and grams
+First I will prompt you for number of pounds and then the number of ounces
+
+
+Pounds : 5
+
+Ounces : 4
+
+Result:
+
+5 Poound(s) and 4 Ounce(s) converts to
+
+2 kg and 381 g
+
+Process returned 0 (0x0)   execution time : 7.465 s
+Press any key to continue.
+
+
+
+This progam will convert pounds and ounces to kilograms and grams
+First I will prompt you for number of pounds and then the number of ounces
+
+
+Pounds : 13
+
+Ounces : 11
+
+Result:
+
+13 Poound(s) and 11 Ounce(s) converts to
+
+6 kg and 209 g
+
+Process returned 0 (0x0)   execution time : 3.369 s
+Press any key to continue.

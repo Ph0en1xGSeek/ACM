@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1439454062 source:c:\users\phoenix geek\desktop\machine schedule\main.cpp
+	<iostream>
+	<stdio.h>
+	<cstring>
+

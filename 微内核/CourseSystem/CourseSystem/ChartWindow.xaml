@@ -1,0 +1,42 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CourseSystem"
+        xmlns:Charts="clr-namespace:Visifire.Charts;assembly=WPFVisifire.Charts" x:Class="CourseSystem.ChartWindow"
+        mc:Ignorable="d"
+        Title="成绩分布" Height="355" Width="450">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="C:\Users\Ph0en1x\Desktop\CourseSystem\t013c9452fc838292aa.jpg" Stretch="UniformToFill"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="278*"/>
+            <RowDefinition Height="50*"/>
+        </Grid.RowDefinitions>
+
+        <Charts:Chart x:Name="chart" LightingEnabled="True" BorderBrush="{x:Null}" Opacity="0.9">
+            <Charts:Chart.Background>
+                <SolidColorBrush Color="White" Opacity="0.9"/>
+            </Charts:Chart.Background>
+            <Charts:Chart.AxesY>
+                <Charts:Axis Suffix="%" Interval="10" AxisMinimum="0" AxisMaximum="100"/>
+            </Charts:Chart.AxesY>
+            <Charts:Chart.Series>
+                <Charts:DataSeries BubbleStyle="Style1">
+                    <Charts:DataSeries.DataPoints>
+                        <Charts:DataPoint AxisXLabel="不及格"/>
+                        <Charts:DataPoint AxisXLabel="60-69"/>
+                        <Charts:DataPoint AxisXLabel="70-79"/>
+                        <Charts:DataPoint AxisXLabel="80-89"/>
+                        <Charts:DataPoint AxisXLabel="90-99"/>
+                        <Charts:DataPoint AxisXLabel="满分"/>
+                    </Charts:DataSeries.DataPoints>
+                </Charts:DataSeries>
+            </Charts:Chart.Series>
+        </Charts:Chart>
+        <TextBlock x:Name="textBlock" Grid.Row="1" TextWrapping="Wrap" Margin="10,0" FontSize="16" FontWeight="Bold" Foreground="White"/>
+
+    </Grid>
+</Window>

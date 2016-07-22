@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1455584817 source:c:\users\ph0en1x\desktop\generalized matrioshkas\main.cpp
+	<iostream>
+	<stdio.h>
+	<stack>
+	<stdlib.h>
+

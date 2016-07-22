@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1439880993 source:c:\users\ph0en1x\desktop\dice\main.cpp
+	<iostream>
+	<cstdio>
+	<cstring>
+

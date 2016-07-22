@@ -1,0 +1,13 @@
+PGSString testStr1("abcdefghijklmnopqrs");
+    PGSString testStr2(testStr1);
+    cout << testStr2.at(4) << endl;
+    cout << testStr2.capacity() << ' ' << testStr2.length() << endl;
+    testStr2.addCharAt('P' , 6 );
+    testStr2.write(cout);
+    cout << endl << testStr2.capacity() << ' ' << testStr2.length() << endl;
+    testStr2.setEqualTo(PGSString());
+    testStr2.write(cout);
+    cout << endl << testStr2.capacity() << ' ' << testStr2.length() << endl;
+    testStr2.read(cin);
+    testStr2.write(cout);
+    cout << endl << testStr2.capacity() << ' ' << testStr2.length() << endl;

@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1427086289 source:c:\users\phoenix geek\desktop\program1\main.cpp
+	<iostream>
+	"pgsstring.h"
+	<fstream>
+
+1427157574 c:\users\phoenix geek\desktop\program1\pgsstring.h
+	<iostream>
+
+1426920955 source:c:\users\phoenix geek\desktop\program1\pgsstring.cpp
+	"pgsstring.h"
+	<iostream>
+
+1427086289 source:c:\users\phoenix geek\desktop\´úºÅak47\term 2\program1\main.cpp
+	<iostream>
+	"pgsstring.h"
+	<fstream>
+
+1427157574 c:\users\phoenix geek\desktop\´úºÅak47\term 2\program1\pgsstring.h
+	<iostream>
+

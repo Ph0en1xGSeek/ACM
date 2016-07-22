@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1469104116 source:c:\users\ljc\desktop\sudoku situation\main.cpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+

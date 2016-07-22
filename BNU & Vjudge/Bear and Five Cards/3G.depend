@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1468411036 source:c:\users\tjuacm_lyj\desktop\3g\main.cpp
+	<iostream>
+	<stdio.h>
+	<algorithm>
+	<string.h>
+	<map>
+	<queue>
+	<vector>
+

@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1416281753 source:c:\users\phoenix geek\desktop\acm guessing game\main.cpp
+	<iostream>
+	<string>
+

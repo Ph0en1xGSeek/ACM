@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1440988601 source:c:\users\ph0en1x\desktop\fibonacci again and again\main.cpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+

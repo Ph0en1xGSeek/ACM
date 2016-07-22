@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1416625287 source:c:\users\phoenix geek\desktop\acm  monkey vines\main.cpp
+	<iostream>
+	<string>
+	<cmath>
+

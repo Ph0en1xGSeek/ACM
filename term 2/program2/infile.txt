@@ -1,0 +1,29 @@
+11111   22222   33333  44444  55555
+
+121212121212   343434343434   565656565656
+
+787878787878   909090909090
+
+a b c d e
+
+NowHereIsAnotherTestOfTheNewStringClass  Does It Work ?
+
+// File Name:    Actual name of file (like assign1.cpp)
+// Author:       Your Name (both in Pinyin and Hanzi (the Hanzi can be handwritten))
+// StudentNumber: 123456789012345678901234567890
+
+// Assignment:   ######################################
+// Description:  Short description of the program ( Short description of the program (at least a couple 
+//		 sentences - also you should say where the input data come from, what information is output, 
+//               and is the outputted data sent to the screen or a 
+
+
+Welcome_to_Middle_Earth,_a_land_of_Hobbits,_Elves,_Dwarves,_Wizards,_and_Men._From_the_bright_towns_and_fields_of_the_Shire,_to_the_wilds_of_Mirkwood_Forest_and_Rhovanion,_and_to_the_powerful_kingdoms_of_Gondor_and_Rohan,_the_various_peoples_of_this_land_struggle_against_the_foul_minions_and_the_ancient,_evil_threat_of_the_Dark_Lord,_Sauron.
+
+Mirkwood_has_long_been_a_dangerous_place,_and_recently_one_of_King_Thranduils_patrols_has_uncovered_disconcerting_signs_of_a_gathering_menace_in_the_vicinity_of_Dol_Guldur._A_party_of_heroes,_controlled_by_the_players,_has_been_assembled_to_carry_a_message_through_Mirkwood,_down_the_Anduin,_and_eventually_to_Lorien,_to_warn_Lady_Galadriel_of_the_imminent_danger.
+
+While_exploring_in_the_vicinity_of_Dol_Guldur_at_Lady_Galadriels_request,_one_of_the_heroes'_companions_is_captured_by_the_Necromancer's_forces,_and_is_now_awaiting_interrogation_in_a_dungeon_beneath_the_hill._Knowing_their_friend's_time_is_short,_the_heroes_decide_to_attempt_a_desperate_rescue.
+
+You_have_done_well_to_come,_said_Elrond._You_will_hear_today_all_that_you_need_to_understand_the_purpose_of_the_Enemy._There_is_naught_that_you_can_do,_other_than_to_resist,_with_hope_or_without_it._But_you_do_not_stand_alone._You_will_learn_that_your_trouble_is_but_part_of_the_trouble_of_all_the_western_world._from_the_chapter_The_Council_of_Elrond_The_Lord_of_the_Rings,_The_Fellowship_of_the_Ring
+
+Yet_it_is_not_our_part_to_master_all_the_tides_of_the_world,_but_to_do_what_is_in_us_for_the_succour_of_those_years_wherein_we_are_set,_uprooting_the_evil_in_the_fields_that_we_know,_so_that_those_who_live_after_may_have_clean_earth_to_till._What_weather_they_shall_have_is_not_ours_to_rule._Gandalf,_The_Return_of_the_King

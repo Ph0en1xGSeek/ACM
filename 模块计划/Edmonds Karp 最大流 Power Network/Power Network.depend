@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1438657765 source:c:\users\phoenix geek\desktop\power network\main.cpp
+	<iostream>
+	<stdio.h>
+	<cstring>
+	<queue>
+

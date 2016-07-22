@@ -1,0 +1,61 @@
+# depslib dependency file v1.0
+1430321394 source:c:\users\phoenix geek\desktop\prog4\doublelinkedlist.cpp
+	"doublelinkedlist.h"
+	"node.h"
+	"pgsstring.h"
+
+1430377070 c:\users\phoenix geek\desktop\prog4\doublelinkedlist.h
+	"node.h"
+
+1430377070 c:\users\phoenix geek\desktop\prog4\node.h
+	"pgsstring.h"
+
+1430490125 c:\users\phoenix geek\desktop\prog4\pgsstring.h
+	<iostream>
+
+1430377070 source:c:\users\phoenix geek\desktop\prog4\main.cpp
+	<iostream>
+	"pgsstring.h"
+	"node.h"
+	"doublelinkedlist.h"
+	<fstream>
+	<cstdlib>
+
+1429950216 source:c:\users\phoenix geek\desktop\prog4\node.cpp
+	"node.h"
+	"pgsstring.h"
+
+1429277876 source:c:\users\phoenix geek\desktop\prog4\pgsstring.cpp
+	"pgsstring.h"
+	<iostream>
+
+1430321394 source:c:\users\phoenix geek\desktop\program4\doublelinkedlist.cpp
+	"doublelinkedlist.h"
+	"node.h"
+	"pgsstring.h"
+
+1430377070 c:\users\phoenix geek\desktop\program4\doublelinkedlist.h
+	"node.h"
+
+1430377070 c:\users\phoenix geek\desktop\program4\node.h
+	"pgsstring.h"
+
+1430490125 c:\users\phoenix geek\desktop\program4\pgsstring.h
+	<iostream>
+
+1429950216 source:c:\users\phoenix geek\desktop\program4\node.cpp
+	"node.h"
+	"pgsstring.h"
+
+1430490729 source:c:\users\phoenix geek\desktop\program4\pgsstring.cpp
+	"pgsstring.h"
+	<iostream>
+
+1430569218 source:c:\users\phoenix geek\desktop\program4\main.cpp
+	<iostream>
+	"pgsstring.h"
+	"node.h"
+	"doublelinkedlist.h"
+	<fstream>
+	<cstdlib>
+

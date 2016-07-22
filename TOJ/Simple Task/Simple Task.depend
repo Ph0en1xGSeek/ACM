@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1443697730 source:c:\users\ph0en1x\desktop\simple task\main.cpp
+	<iostream>
+	<stdio.h>
+	<algorithm>
+

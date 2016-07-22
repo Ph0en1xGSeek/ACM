@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1468655995 source:c:\users\tjuacm_lyj\desktop\5b\main.cpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+	<algorithm>
+	<cmath>
+

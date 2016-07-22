@@ -1,0 +1,44 @@
+
+<!-- saved from url=(0051)http://acm.tju.edu.cn/toj/vcontest/showp9903_D.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Pragma" content="no-cache">
+<title>Problem D | TJU ACM-ICPC Online Judge</title><style type="text/css">#yddContainer{display:block;font-family:Microsoft YaHei;position:relative;width:100%;height:100%;top:-4px;left:-4px;font-size:12px;border:1px solid}#yddTop{display:block;height:22px}#yddTopBorderlr{display:block;position:static;height:17px;padding:2px 28px;line-height:17px;font-size:12px;color:#5079bb;font-weight:bold;border-style:none solid;border-width:1px}#yddTopBorderlr .ydd-sp{position:absolute;top:2px;height:0;overflow:hidden}.ydd-icon{left:5px;width:17px;padding:0px 0px 0px 0px;padding-top:17px;background-position:-16px -44px}.ydd-close{right:5px;width:16px;padding-top:16px;background-position:left -44px}#yddKeyTitle{float:left;text-decoration:none}#yddMiddle{display:block;margin-bottom:10px}.ydd-tabs{display:block;margin:5px 0;padding:0 5px;height:18px;border-bottom:1px solid}.ydd-tab{display:block;float:left;height:18px;margin:0 5px -1px 0;padding:0 4px;line-height:18px;border:1px solid;border-bottom:none}.ydd-trans-container{display:block;line-height:160%}.ydd-trans-container a{text-decoration:none;}#yddBottom{position:absolute;bottom:0;left:0;width:100%;height:22px;line-height:22px;overflow:hidden;background-position:left -22px}.ydd-padding010{padding:0 10px}#yddWrapper{color:#252525;z-index:10001;background:url(chrome-extension://eopjamdnofihpioajgfdikhhbobonhbb/ab20.png);}#yddContainer{background:#fff;border-color:#4b7598}#yddTopBorderlr{border-color:#f0f8fc}#yddWrapper .ydd-sp{background-image:url(chrome-extension://eopjamdnofihpioajgfdikhhbobonhbb/ydd-sprite.png)}#yddWrapper a,#yddWrapper a:hover,#yddWrapper a:visited{color:#50799b}#yddWrapper .ydd-tabs{color:#959595}.ydd-tabs,.ydd-tab{background:#fff;border-color:#d5e7f3}#yddBottom{color:#363636}#yddWrapper{min-width:250px;max-width:400px;}</style></head><body>
+<center><a href="http://acm.tju.edu.cn/toj/"><img src="./Problem D   TJU ACM-ICPC Online Judge_files/head.jpg" width="770" height="80" alt="Tianjin University Online Judge" border="0"></a><font face="Times New Roman"><br>
+<table width="80%" border="0"><tbody><tr align="center"><td width="17%"><a href="http://acm.tju.edu.cn/toj/vcontest/contest9903.html"><font color="green" size="+1">Problems</font></a></td><td width="16%"><a href="http://acm.tju.edu.cn/toj/vcontest/submit.php?cid=9903&pid=D"><font color="green" size="+1">Submit</font></a></td><td width="17%"><a href="http://acm.tju.edu.cn/toj/vcontest/status.php?cid=9903"><font color="green" size="+1">Runs Status</font></a></td><td width="17%"><a href="http://acm.tju.edu.cn/toj/vcontest/ranklist9903.html"><font color="green" size="+1">Rank List</font></a></td><td width="17%"><a href="http://acm.tju.edu.cn/toj/vcontest/stat9903.html"><font color="green" size="+1">Statistics</font></a></td><td><a href="http://acm.tju.edu.cn/toj/forum.php" target="_blank"><font color="green" size="+1">Clarifications</font></a></td></tr></tbody></table>
+</font></center><hr><font face="Times New Roman">
+<div style="background-image:url(../pics/bgt.gif)"><center><font size="+2">D.</font> &nbsp; <font size="+2" color="blue">Score</font></center>
+<hr><center><font color="green">Time Limit:</font> 1.0 Seconds&nbsp; &nbsp;<font color="green">Memory Limit: </font>65536K</center><hr><br><br>
+<span lang="en">There is an objective test result such as "OOXXOXXOOO". An 'O' means a correct answer of a problem and
+an 'X' means a wrong answer. The score of each problem of this test is calculated by itself and its just
+previous consecutive 'O's only when the answer is correct. For example, the score of the 10th problem is 3
+that is obtained by itself and its two previous consecutive 'O's.
+<p>Therefore, the score of "OOXXOXXOOO" is 10 which is calculated by "1+2+0+0+1+0+0+1+2+3".
+</p><p>You are to write a program calculating the scores of test results.
+</p><p></p><h3>Input</h3>
+<p>Your program is to read from standard input. The input consists of T test cases. The number of test cases T is
+given in the first line of the input. Each test case starts with a line containing a string composed by 'O' and
+'X' and the length of the string is more than 0 and less than 80. There is no spaces between 'O' and 'X'.
+</p><p></p><h3>Output</h3>
+<p>Your program is to write to standard output. Print exactly one line for each test case. The line is to contain the
+score of the test case.
+</p><p>The following shows sample input and output for five test cases.
+</p><p></p><h3>Sample Input</h3>
+<tt><pre>5
+OOXXOXXOOO
+OOXXOOXXOO
+OXOXOXOXOXOXOX
+OOOOOOOOOO
+OOOOXOOOOXOOOOX
+</pre></tt>
+<p></p><h3>Output for the Sample Input</h3>
+<tt><pre>10
+9
+7
+55
+30
+</pre></tt>
+<br><br></span><font face="Lucida Handwriting,Arial" color="red"><b>Source:</b>&nbsp; <i><a style="text-decoration: none; color: red" href="http://acm.tju.edu.cn/toj/search_process.php?s=South+Korea+2005+-+Seoul">South Korea 2005 - Seoul</a></i></font><font face="Arial"><br><br><a href="http://acm.tju.edu.cn/toj/showp2501.html">Problem ID in problemset: 2501</a></font><br><br>
+<hr><center><b><a href="http://acm.tju.edu.cn/toj/vcontest/submit.php?cid=9903&pid=D">Submit</a>&nbsp; &nbsp;<a href="http://acm.tju.edu.cn/toj/vcontest/contest9903.html"><font color="00C000">Back</font></a>&nbsp; &nbsp;<a href="http://acm.tju.edu.cn/toj/vcontest/status.php?cid=9903&pid=D"><font color="black">Runs</font></a>&nbsp; &nbsp;<a href="http://acm.tju.edu.cn/toj/problem_stat.php?pid=2501" target="_blank">Statistics</a>&nbsp; &nbsp;<a href="http://acm.tju.edu.cn/toj/forum.php?pid=2501" target="_blank"><font color="006060">Clarifications</font></a></b></center>
+<hr><center><a href="http://acm.tju.edu.cn/toj/"><font color="blue">Tianjin University Online Judge</font></a> <font color="red">v1.2.4</font></center>
+</div>
+</font></body></html>

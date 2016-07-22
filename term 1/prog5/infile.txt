@@ -1,0 +1,71 @@
+Assignment 5 (40 Points) 
+
+
+
+Word Counter
+
+When in the assignment due: In one week, at the start of lab on November 10th. Points will be deducted if your file does not contain the documentation header comments as listed at the bottom of the page ( this is standard and will be required for all programs for the class). 
+
+Program Description: This program we will be reading from a file and working with strings. Your program is required to ask the user for a file that it will open and then read. While your program is reading the file, it will be counting the total number of words by their lengths. When your program has read all of the file, then it will report to the screen the total number of word by their length, and the total number of words.
+
+For example, if your program read the following file ( demo.txt ), it should give a report as shown below the file
+
+File named demo.txt
+
+
+
+Here is a test file that is full of some random words. I like icecream and pizza.
+
+
+
+
+
+Output to the screen
+
+
+
+    ~ Word Conter ~
+What file would you like a report on (or type exit to quit): badname.txt
+I'm sorry badname.txt could not be found.
+What file would you like a report on (or type exit to quit): demo.txt
+
+
+        ~Word Report for demo.txt
+             Length:         Count:
+                1               2
+                2               3
+                3               1
+                4               7
+                5               0
+                6               3
+                7               0
+                8               1
+               >8               0
+Total words in the file: 17
+
+What file would you like a report on (or type exit to quit): exit
+Press any key to exit
+
+
+
+
+Note: words. and pizza. both count as 6 letter words due to the . 
+
+As shown in the above example, you should ask the user for the file to be read, and if the file can not be opened then you should ask again until you can open a file or the user types exit to leave the program. Your program should total the number of words of length 1-8, and keep a total for word over length 8 (>8). You are required to use a switch statement to add up the totals. Your output should look nice, so use some setw( n )'s. 
+
+demo.txt to be used when testing your progam. (do a right click and then select Save As)
+
+infile.txt to be used when you run your program to turn in the results. (do a right click and then select Save As)
+
+Example program:
+
+You will need to put the files in your c++ projects directory (for DevC++ this is where the .cpp file is). 
+
+You will need to use the fail( ) function to check to see if the input file failed to open correctly....meaning it could not find the file in the directory. Here is an example of using the fail function.
+
+
+ifstrean fin;                                   // create the input file stream variable
+string str = "myfile.txt";
+fin.open( str.c_str() );                        // tries to open the file
+if( fin.fail() )                                // .fail() returns true if it could not open the file
+	cout << "Unable to find the input file\n";

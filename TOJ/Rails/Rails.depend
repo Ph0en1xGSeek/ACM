@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1455534815 source:c:\users\ph0en1x\desktop\rails\main.cpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+

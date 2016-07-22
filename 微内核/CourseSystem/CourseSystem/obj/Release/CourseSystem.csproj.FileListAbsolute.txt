@@ -1,0 +1,13 @@
+C:\Users\Ph0en1x\Desktop\CourseSystem\CourseSystem\obj\Release\AddWindow1.g.cs
+C:\Users\Ph0en1x\Desktop\CourseSystem\CourseSystem\obj\Release\AddWindow2.g.cs
+C:\Users\Ph0en1x\Desktop\CourseSystem\CourseSystem\obj\Release\ChangeWindow1.g.cs
+C:\Users\Ph0en1x\Desktop\CourseSystem\CourseSystem\obj\Release\ChangeWindow2.g.cs
+C:\Users\Ph0en1x\Desktop\CourseSystem\CourseSystem\obj\Release\CourseWindow.g.cs
+C:\Users\Ph0en1x\Desktop\CourseSystem\CourseSystem\obj\Release\MainWindow.g.cs
+C:\Users\Ph0en1x\Desktop\CourseSystem\CourseSystem\obj\Release\ScoreWindow.g.cs
+C:\Users\Ph0en1x\Desktop\CourseSystem\CourseSystem\obj\Release\StudentWindow.g.cs
+C:\Users\Ph0en1x\Desktop\CourseSystem\CourseSystem\obj\Release\Window7.g.cs
+C:\Users\Ph0en1x\Desktop\CourseSystem\CourseSystem\obj\Release\App.g.cs
+C:\Users\Ph0en1x\Desktop\CourseSystem\CourseSystem\obj\Release\CourseSystem_MarkupCompile.cache
+C:\Users\Ph0en1x\Desktop\CourseSystem\CourseSystem\obj\Release\CourseSystem_MarkupCompile.lref
+C:\Users\Ph0en1x\Desktop\CourseSystem\CourseSystem\obj\Release\CourseSystem.csprojResolveAssemblyReference.cache

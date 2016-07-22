@@ -1,0 +1,39 @@
+﻿<Window x:Class="CourseSystem.ScoreWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CourseSystem"
+        mc:Ignorable="d"
+        Title="成绩查询" Height="300" Width="430" MaxWidth="430" MaxHeight="300" MinWidth="430" MinHeight="300">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="C:\Users\Ph0en1x\Desktop\CourseSystem\t013c9452fc838292aa.jpg"/>
+        </Grid.Background>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="35" Margin="114,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="258" FontSize="16" BorderBrush="{x:Null}" TabIndex="0">
+            <TextBox.Background>
+                <SolidColorBrush Color="White" Opacity="0.9"/>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox x:Name="textBox_Copy" HorizontalAlignment="Left" Height="35" Margin="114,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="258" FontSize="16" BorderBrush="{x:Null}" TabIndex="1">
+            <TextBox.Background>
+                <SolidColorBrush Color="White" Opacity="0.9"/>
+            </TextBox.Background>
+        </TextBox>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="35" Margin="10,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="99" FontSize="16" TextAlignment="Right" Foreground="White"><Run Text="学号"/><Run Text="："/></TextBlock>
+        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Height="35" Margin="10,90,0,0" TextWrapping="Wrap" Text="课程编号：" VerticalAlignment="Top" Width="99" FontSize="16" TextAlignment="Right" Foreground="White"/>
+        <Button x:Name="button" Content="查询" HorizontalAlignment="Left" Margin="34,185,0,50" Width="80" BorderBrush="{x:Null}" Click="button_Click"/>
+        <TextBlock x:Name="textBlock1" Margin="114,185,50,50" TextWrapping="Wrap" FontSize="20">
+            <TextBlock.Background>
+                <SolidColorBrush Color="#FFF3F0F0" Opacity="0.9"/>
+            </TextBlock.Background>
+        </TextBlock>
+        <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="Left" Height="35" Margin="10,131,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="99" FontSize="16" TextAlignment="Right" Foreground="White"><Run Text="密码"/><Run Text="："/></TextBlock>
+        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Height="35" Margin="114,130,0,0" VerticalAlignment="Top" Width="258" BorderBrush="{x:Null}" TabIndex="2">
+            <PasswordBox.Background>
+                <SolidColorBrush Color="White" Opacity="0.9"/>
+            </PasswordBox.Background>
+        </PasswordBox>
+
+    </Grid>
+</Window>

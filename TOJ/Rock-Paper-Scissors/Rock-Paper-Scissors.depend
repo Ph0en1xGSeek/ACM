@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1439194907 source:c:\users\phoenix geek\desktop\rock-paper-scissors\main.cpp
+	<iostream>
+	<cstdio>
+

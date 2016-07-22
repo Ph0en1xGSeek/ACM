@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1455371656 source:c:\users\ph0en1x\desktop\patting heads\main.cpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+

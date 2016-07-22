@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1440478321 source:c:\users\ph0en1x\desktop\intervals\main.cpp
+	<iostream>
+	<stdio.h>
+	<algorithm>
+

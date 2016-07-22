@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1469004880 source:c:\users\ljc\desktop\gcd rmq\main.cpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+	<algorithm>
+	<math.h>
+	<map>
+

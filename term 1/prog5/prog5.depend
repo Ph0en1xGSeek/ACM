@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1416228038 source:c:\users\phoenix geek\desktop\prog5\main.cpp
+	<iostream>
+	<string>
+	<fstream>
+	<cstdlib>
+	<iomanip>
+

@@ -1,0 +1,6 @@
+5
+Franks,Tom 2 3 8 3 6 3 5
+Gates,Bill 8 8 3 0 8 2 0
+Jordan,Michael 9 10 4 7 0 0 0
+Bush,George  5 6 5 6 5 6 5 
+Heinke,Lonnie  7 3 8 7 2 5 7

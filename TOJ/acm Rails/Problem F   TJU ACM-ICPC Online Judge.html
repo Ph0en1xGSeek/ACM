@@ -1,0 +1,74 @@
+
+<!-- saved from url=(0051)http://acm.tju.edu.cn/toj/vcontest/showp9898_F.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Pragma" content="no-cache">
+<title>Problem F | TJU ACM-ICPC Online Judge</title><style type="text/css">
+#float_l {display:none!important;display:none}</style>
+<style type="text/css">#yddContainer{display:block;font-family:Microsoft YaHei;position:relative;width:100%;height:100%;top:-4px;left:-4px;font-size:12px;border:1px solid}#yddTop{display:block;height:22px}#yddTopBorderlr{display:block;position:static;height:17px;padding:2px 28px;line-height:17px;font-size:12px;color:#5079bb;font-weight:bold;border-style:none solid;border-width:1px}#yddTopBorderlr .ydd-sp{position:absolute;top:2px;height:0;overflow:hidden}.ydd-icon{left:5px;width:17px;padding:0px 0px 0px 0px;padding-top:17px;background-position:-16px -44px}.ydd-close{right:5px;width:16px;padding-top:16px;background-position:left -44px}#yddKeyTitle{float:left;text-decoration:none}#yddMiddle{display:block;margin-bottom:10px}.ydd-tabs{display:block;margin:5px 0;padding:0 5px;height:18px;border-bottom:1px solid}.ydd-tab{display:block;float:left;height:18px;margin:0 5px -1px 0;padding:0 4px;line-height:18px;border:1px solid;border-bottom:none}.ydd-trans-container{display:block;line-height:160%}.ydd-trans-container a{text-decoration:none;}#yddBottom{position:absolute;bottom:0;left:0;width:100%;height:22px;line-height:22px;overflow:hidden;background-position:left -22px}.ydd-padding010{padding:0 10px}#yddWrapper{color:#252525;z-index:10001;background:url(chrome-extension://eopjamdnofihpioajgfdikhhbobonhbb/ab20.png);}#yddContainer{background:#fff;border-color:#4b7598}#yddTopBorderlr{border-color:#f0f8fc}#yddWrapper .ydd-sp{background-image:url(chrome-extension://eopjamdnofihpioajgfdikhhbobonhbb/ydd-sprite.png)}#yddWrapper a,#yddWrapper a:hover,#yddWrapper a:visited{color:#50799b}#yddWrapper .ydd-tabs{color:#959595}.ydd-tabs,.ydd-tab{background:#fff;border-color:#d5e7f3}#yddBottom{color:#363636}#yddWrapper{min-width:250px;max-width:400px;}</style></head><body>
+<center><a href="http://acm.tju.edu.cn/toj/"><img src="./Problem F   TJU ACM-ICPC Online Judge_files/head.jpg" width="770" height="80" alt="Tianjin University Online Judge" border="0"></a><font face="Times New Roman"><br>
+<table width="80%" border="0"><tbody><tr align="center"><td width="17%"><a href="http://acm.tju.edu.cn/toj/vcontest/contest9898.html"><font color="green" size="+1">Problems</font></a></td><td width="16%"><a href="http://acm.tju.edu.cn/toj/vcontest/submit.php?cid=9898&pid=F"><font color="green" size="+1">Submit</font></a></td><td width="17%"><a href="http://acm.tju.edu.cn/toj/vcontest/status.php?cid=9898"><font color="green" size="+1">Runs Status</font></a></td><td width="17%"><a href="http://acm.tju.edu.cn/toj/vcontest/ranklist9898.html"><font color="green" size="+1">Rank List</font></a></td><td width="17%"><a href="http://acm.tju.edu.cn/toj/vcontest/stat9898.html"><font color="green" size="+1">Statistics</font></a></td><td><a href="http://acm.tju.edu.cn/toj/forum.php" target="_blank"><font color="green" size="+1">Clarifications</font></a></td></tr></tbody></table>
+</font></center><hr><font face="Times New Roman">
+<div style="background-image:url(../pics/bgt.gif)"><center><font size="+2">F.</font> &nbsp; <font size="+2" color="blue">Rails</font></center>
+<hr><center><font color="green">Time Limit:</font> 1.0 Seconds&nbsp; &nbsp;<font color="green">Memory Limit: </font>65536K&nbsp; &nbsp; <font color="red">Multiple test files</font></center><hr><br><br>
+<span lang="en"><p>There is a famous railway station in PopPush City. Country there is incredibly 
+  hilly. The station was built in last century. Unfortunately, funds were extremely 
+  limited that time. It was possible to establish only a surface track. Moreover, 
+  it turned out that the station could be only a dead-end one (see picture) and 
+  due to lack of available space it could have only one track. </p>
+<p align="center"><img src="./Problem F   TJU ACM-ICPC Online Judge_files/1036_rails.gif" width="418" height="216"> 
+</p>
+<p></p>
+<p> </p>
+<p>The local tradition is that every train arriving from the direction A continues 
+  in the direction B with coaches reorganized in some way. Assume that the train 
+  arriving from the direction A has N ≤ 1000 coaches numbered in increasing 
+  order 1, 2, ..., N. The chief for train reorganizations must know whether it 
+  is possible to marshal coaches continuing in the direction B so that their order 
+  will be a1, a2, ..., aN. Help him and write a program that decides whether it 
+  is possible to get the required order of coaches. You can assume that single 
+  coaches can be disconnected from the train before they enter the station and 
+  that they can move themselves until they are on the track in the direction B. 
+  You can also suppose that at any time there can be located as many coaches as 
+  necessary in the station. But once a coach has entered the station it cannot 
+  return to the track in the direction A and also once it has left the station 
+  in the direction B it cannot return back to the station. </p>
+<p><br>
+  <b>Input </b><br>
+  <br>
+  The input consists of blocks of lines. Each block except the last describes 
+  one train and possibly more requirements for its reorganization. In the first 
+  line of the block there is the integer N described above. In each of the next 
+  lines of the block there is a permutation of 1, 2, ..., N. The last line of 
+  the block contains just 0. <br>
+  <br>
+  The last block consists of just one line containing 0. </p>
+<p><br>
+  <b>Output </b><br>
+  <br>
+  The output contains the lines corresponding to the lines with permutations in 
+  the input. A line of the output contains Yes if it is possible to marshal the 
+  coaches in the order required on the corresponding line of the input. Otherwise 
+  it contains No. In addition, there is one empty line after the lines corresponding 
+  to one block of the input. There is no line in the output corresponding to the 
+  last "null" block of the input. </p>
+<p><br><b>Sample Input</b></p>
+<tt><pre>5
+1 2 3 4 5
+5 4 1 2 3
+0
+6
+6 5 4 3 2 1
+0
+0
+</pre></tt>
+<p><br><b>Sample Output</b></p>
+<tt><pre>Yes
+No
+
+Yes
+</pre></tt>
+<br><br></span><font face="Lucida Handwriting,Arial" color="red"><b>Source:</b>&nbsp; <i><a style="text-decoration: none; color: red" href="http://acm.tju.edu.cn/toj/search_process.php?s=Central+European+1997">Central European 1997</a></i></font><font face="Arial"><br><br><a href="http://acm.tju.edu.cn/toj/showp1036.html">Problem ID in problemset: 1036</a></font><br><br>
+<hr><center><b><a href="http://acm.tju.edu.cn/toj/vcontest/submit.php?cid=9898&pid=F">Submit</a>&nbsp; &nbsp;<a href="http://acm.tju.edu.cn/toj/vcontest/contest9898.html"><font color="00C000">Back</font></a>&nbsp; &nbsp;<a href="http://acm.tju.edu.cn/toj/vcontest/status.php?cid=9898&pid=F"><font color="black">Runs</font></a>&nbsp; &nbsp;<a href="http://acm.tju.edu.cn/toj/problem_stat.php?pid=1036" target="_blank">Statistics</a>&nbsp; &nbsp;<a href="http://acm.tju.edu.cn/toj/forum.php?pid=1036" target="_blank"><font color="006060">Clarifications</font></a></b></center>
+<hr><center><a href="http://acm.tju.edu.cn/toj/"><font color="blue">Tianjin University Online Judge</font></a> <font color="red">v1.2.4</font></center>
+</div>
+</font></body></html>

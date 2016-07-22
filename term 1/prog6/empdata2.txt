@@ -1,0 +1,8 @@
+7
+Cat,Bill  9 3 7 5 8 0 0
+Snake,Frank 2 3 8 3 6 3 5
+Dog,Chet  8 8 3 0 8 2 0
+Mouse,Mickey  9 10 4 7 0 0 0
+Duck,Daffy  5 6 5 6 5 6 5 
+Mouse,Minnie  7 3 8 7 2 5 7
+Yosimitee,Sam  2 5 3 0 4 9 4

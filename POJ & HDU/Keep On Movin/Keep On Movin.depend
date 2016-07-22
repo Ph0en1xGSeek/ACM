@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1469155382 source:c:\users\ljc\desktop\keep on movin\main.cpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+	<algorithm>
+	<queue>
+	<vector>
+

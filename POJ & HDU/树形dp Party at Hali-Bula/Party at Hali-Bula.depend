@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1468828614 source:c:\users\tjuacm_lyj\desktop\party at hali-bula\main.cpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+	<map>
+

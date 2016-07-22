@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1437651401 source:c:\users\phoenix geek\desktop\collecting bugs\main.cpp
+	<iostream>
+	<cstring>
+	<iomanip>
+	<stdio.h>
+

@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1438762989 source:c:\users\phoenix geek\desktop\corn fields\main.cpp
+	<iostream>
+	<stdio.h>
+	<cstring>
+

@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1439790296 source:c:\users\ph0en1x\desktop\word amalgamation\main.cpp
+	<iostream>
+	<set>
+	<string>
+	<stdio.h>
+	<algorithm>
+

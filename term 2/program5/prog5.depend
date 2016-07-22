@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1431601395 source:c:\users\phoenix geek\desktop\Ææ¿á\term 2\program5\main.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+	<set>
+	<string>
+	<list>
+	<iterator>
+	<fstream>
+

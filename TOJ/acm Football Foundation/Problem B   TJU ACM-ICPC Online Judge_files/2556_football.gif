@@ -1,0 +1,171 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- cmcccs|login_req||||http://211.103.85.65:8866/portalSelfServiceSSO.wlan?php=y||-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Cache-Control" content="max-age=108000" />
+
+<title>中国移动随E行宽带业务</title>
+<link type="text/css" href="css/this/style.css" rel="Stylesheet" />
+<script language="javascript">
+function setCookie(name, value, datenum)
+{
+		var expires=new Date();
+		expires.setTime(expires.getTime()+datenum*24*60*60*1000);
+
+		document.cookie=name+"="+escape(value)+"; expires="+expires.toGMTString()+"; path=/; secure";
+}
+setCookie("supportCookie", "YES","365");
+</script>
+</head>
+<body>
+
+<form name="loginform" action="https://211.103.85.65:7090/index.php" method="post">
+
+<input  type="hidden" name="wlanacname" value="0200.0022.220.00">
+<input  type="hidden" name="wlanuserip" value="100.65.137.43">
+<input  type="hidden" name="wlanacssid" value="CMCC-EDU">
+<input  type="hidden" name="actiontype" value="LOGIN">
+<input  type="hidden" name="languagetype" value="">
+<input  type="hidden" name="USER" value="">
+<input  type="hidden" name="booktime" value="">
+<input  type="hidden" name="validperiod" value="">
+<input  type="hidden" name="logonsessid" value="">
+</form> 
+
+<div class="Wp_contain_wrap">
+<div class="Wp_contain">
+<div class="Wp_hd">
+	<div class="Wp_logo float_lef"></div><!--end Wp_logo-->
+    <div class="Wp_admin float_rig">
+        <a href="./InformationPage.php?wlanacname=0200.0022.220.00&wlanacssid=CMCC-EDU" target="_blank">业务介绍</a> &nbsp;&nbsp;  
+        <span>|&nbsp;&nbsp;            <a id="Wp_SelfService" href="http://211.103.85.65:8866/portalSelfServiceSSO.wlan?php=y?wlanacname=0200.0022.220.00&wlanacssid=CMCC-EDU" target="_blank">自助服务</a></span> &nbsp;&nbsp;|  &nbsp;&nbsp; 
+        <a href="cmcc_edu_download_client.php?wlanacname=0200.0022.220.00&wlanacssid=CMCC-EDU" target="_blank">客户端下载</a> &nbsp;&nbsp;|  &nbsp;&nbsp; 
+        <a href="http://www.ishenbian.com/life/" target="_blank">热点查询</a>  
+
+    </div><!--end Wp_admin-->
+    <div class="clear"></div>
+</div><!--end Wp_hd-->
+<div class="Wp_Main">
+<iframe class="Wp_frame" id="Wp_frame" src="https://211.103.85.65:7090/cmcc_edu_input.php?wlanacip=117.131.191.4&wlanacname=0200.0022.220.00&wlanuserip=100.65.137.43&wlanacssid=CMCC-EDU&fromlocation=cmcc_edu_index" scrolling="no" frameborder="0" allowTransparency="true" name="Wp_frame" style="z-index:-1;"> 
+</iframe> 
+</div><!--end Wp_Main-->
+<div class="Wp_foot">
+	<table>
+    	<tr>
+        	<td><span id="jingIcp">京ICP备</span></td> 
+        	<td>0500888号</td> 
+          <td>中国移动通信版权所有</td> 
+        </tr>
+    </table>
+</div><!--end Wp_foot-->
+</div><!--end Wp_contain-->
+</div><!--end Wp_contain_wrap-->
+
+
+
+<script language="javascript">
+var Message={
+    set: function() {//最小化与恢复状态切换
+    var set=this.minbtn.status == 1?[0,1,'block',this.char[0],'最小化']:
+
+    [1,0,'none',this.char[1],'恢复'];
+    this.minbtn.status=set[0];
+    this.win.style.borderBottomWidth=set[1];
+    this.content.style.display =set[2];
+    this.minbtn.innerHTML =set[3]
+    this.minbtn.title = set[4];
+    this.win.style.top = this.getY().top;
+},
+
+close: function() {//关闭
+    this.win.style.display = 'none';
+    window.onscroll = null;
+},
+
+setOpacity: function(x) {//设置透明度
+var v = x >= 100 ? '': 'Alpha(opacity=' + x + ')';
+this.win.style.visibility = x<=0?'hidden':'visible';//IE有绝对或相对定位内容不随父透明度变化的bug
+this.win.style.filter = v;
+this.win.style.opacity = x / 100;
+},
+show: function() {//渐显
+clearInterval(this.timer2);
+var me = this,fx = this.fx(0, 100, 0.1),t = 0;
+this.timer2 = setInterval(function() {
+t = fx();
+me.setOpacity(t[0]);
+if (t[1] == 0) {clearInterval(me.timer2) }
+},10);
+},
+fx: function(a, b, c) {//缓冲计算
+var cMath = Math[(a - b) > 0 ? "floor": "ceil"],c = c || 0.1;
+return function() {return [a += cMath((b - a) * c), a - b]}
+},
+getY: function() {//计算移动坐标
+var d = document,b = document.body, e = document.documentElement;
+var s = Math.max(b.scrollTop, e.scrollTop);
+var h = /BackCompat/i.test(document.compatMode)?b.clientHeight:e.clientHeight;
+var h2 = this.win.offsetHeight;
+return {foot: s + h + h2 + 2+'px',top: s + h - h2 - 2+'px'}
+},
+moveTo: function(y) {//移动动画
+clearInterval(this.timer);
+var me = this,a = parseInt(this.win.style.top)||0;
+var fx = this.fx(a, parseInt(y));
+var t = 0 ;
+this.timer = setInterval(function() {
+t = fx();
+me.win.style.top = t[0]+'px';
+if (t[1] == 0) {
+clearInterval(me.timer);
+me.bind();
+}
+},10);
+},
+bind:function (){//绑定窗口滚动条与大小变化事件
+var me=this,st,rt;
+window.onscroll = function() {
+clearTimeout(st);
+clearTimeout(me.timer2);
+me.setOpacity(0);
+st = setTimeout(function() {
+me.win.style.top = me.getY().top;
+me.show();
+},600);
+};
+window.onresize = function (){
+clearTimeout(rt);
+rt = setTimeout(function() {me.win.style.top = me.getY().top},100);
+}
+},
+init: function() {//创建HTML
+function $(id) {return document.getElementById(id)};
+this.win=$('msg_win');
+var set={minbtn: 'msg_min',closebtn: 'msg_close',title: 'msg_title',content:
+
+'msg_content'};
+for (var Id in set) {this[Id] = $(set[Id])};
+var me = this;
+this.minbtn.onclick = function() {me.set();this.blur()};
+this.closebtn.onclick = function() {me.close()};
+this.char=navigator.userAgent.toLowerCase().indexOf('firefox')+1?
+
+['_','::','×']:['0','2','r'];  //FF不支持webdings字体
+this.minbtn.innerHTML=this.char[0];
+this.closebtn.innerHTML=this.char[2];
+setTimeout(function() {  //初始化最先位置
+me.win.style.display = 'block';
+me.win.style.top = me.getY().foot;
+me.moveTo(me.getY().top);
+},0);
+return this;
+}
+};
+
+</script>
+
+</body>
+</html>

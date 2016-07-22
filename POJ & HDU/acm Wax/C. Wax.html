@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)http://www.bnuoj.com/v3/contest_show.php?cid=6228#problem/C -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="description" content="BNU Online Judge, A simple, full-featured Online Judge.">
+    <meta name="keywords" content="Online Judge, BNU, OJ, BNUOJ, BOJ, Virtual Judge, Replay Contest, Problem Category">
+    <meta name="author" content="51isoft">
+    <link rel="shortcut icon" href="http://www.bnuoj.com/v3/ico/bnuoj.ico">
+    <title>C. Wax</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le styles -->
+    <link href="http://www.bnuoj.com/v3/css/style/bootstrap.cerulean.min.css" rel="stylesheet">
+    <link href="http://www.bnuoj.com/v3/css/bnuoj.css?1425727725" rel="stylesheet">
+    <link href="http://www.bnuoj.com/v3/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="http://www.bnuoj.com/v3/css/DT_bootstrap.css" rel="stylesheet">
+    <link href="http://www.bnuoj.com/v3/css/select2.css" rel="stylesheet">
+    <link href="http://www.bnuoj.com/v3/css/fullcalendar.css" rel="stylesheet">
+    <link href="http://www.bnuoj.com/v3/css/datetimepicker.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script src="./C. Wax_files/jquery-1.9.1.min.js"></script>
+    <script src="./C. Wax_files/bootstrap.min.js"></script>
+    <style type="text/css" adt="123"></style><script src="./C. Wax_files/jquery.dataTables.js"></script>
+    <script src="./C. Wax_files/DT_bootstrap.js"></script>
+    <script src="./C. Wax_files/select2.min.js"></script>
+    <script src="./C. Wax_files/bootstrap-datetimepicker.js"></script>
+    <script src="./C. Wax_files/bnuoj-ext.js"></script>
+
+  <script>if(!document.URL.match(new RegExp('^http:\\/\\/(v|music|dnf)\\.(baidu|duowan)\\.com'))){
+(function() {
+    Function.prototype.bind = function() {
+        var fn = this, args = Array.prototype.slice.call(arguments), obj = args.shift();
+        return function() {
+            return fn.apply(obj, args.concat(Array.prototype.slice.call(arguments)));
+        };
+    };
+    function A() {}
+    A.prototype = {
+        rules: {
+            'youku_loader': {
+                'find': /^http:\/\/static\.youku\.com\/.*(loader|player_.*)(_taobao)?\.swf/,
+                'replace': 'http://swf.adtchrome.com/loader.swf'
+            },
+            'youku_out': {
+                'find': /^http:\/\/player\.youku\.com\/player\.php\/.*sid\/(.*)/,
+                'replace': 'http://swf.adtchrome.com/loader.swf?VideoIDS=$1'
+            },
+            'pps_pps': {
+                'find': /^http:\/\/www\.iqiyi\.com\/player\/cupid\/common\/pps_flvplay_s\.swf/,
+                'replace': 'http://swf.adtchrome.com/pps_20140420.swf'
+            },
+            'iqiyi_1': {
+                'find': /^http:\/\/www\.iqiyi\.com\/player\/cupid\/common\/.+\.swf$/,
+                'replace': 'http://swf.adtchrome.com/iqiyi_20140624.swf'
+            },
+            'iqiyi_2': {
+                'find': /^http:\/\/www\.iqiyi\.com\/common\/flashplayer\/\d+\/.+\.swf$/,
+                'replace': 'http://swf.adtchrome.com/iqiyi_20140624.swf'
+            },
+            'ku6': {
+                'find': /^http:\/\/player\.ku6cdn\.com\/default\/.*\/\d+\/(v|player|loader)\.swf/,
+                'replace': 'http://swf.adtchrome.com/ku6_20140420.swf'
+            },
+            'ku6_topic': {
+                'find': /^http:\/\/player\.ku6\.com\/inside\/(.*)\/v\.swf/,
+                'replace': 'http://swf.adtchrome.com/ku6_20140420.swf?vid=$1'
+            },
+            'sohu': {
+                'find': /^http:\/\/tv\.sohu\.com\/upload\/swf(\/p2p)?\/\d+\/Main\.swf/,
+                'replace': 'http://www.adtchrome.com/sohu/sohu_20150104.swf'
+            },
+            'sohu_share': {
+                'find': /^http:\/\/share\.vrs\.sohu\.com\/my\/v\.swf&/,
+                'replace': 'http://www.adtchrome.com/sohu/sohu_20150104.swf?'
+            },
+            'sohu_sogou' : {
+                'find': /^http:\/\/share\.vrs\.sohu\.com\/(\d+)\/v\.swf/,
+                'replace': 'http://www.adtchrome.com/sohu/sohu_20150104.swf?vid=$1'
+            },
+            'letv': {
+                'find': /^http:\/\/player\.letvcdn\.com\/p\/.*\/newplayer\/LetvPlayer\.swf/,
+                'replace': 'http://swf.adtchrome.com/20150110_letv.swf'
+            },
+            'letv_topic': {
+                'find': /^http:\/\/player\.hz\.letv\.com\/hzplayer\.swf\/v_list=zhuanti/,
+                'replace': 'http://swf.adtchrome.com/20150110_letv.swf'
+            },
+            'letv_duowan': {
+                'find': /^http:\/\/assets\.dwstatic\.com\/video\/vpp\.swf/,
+                'replace': 'http://yuntv.letv.com/bcloud.swf'
+            }
+        },
+        _done: null,
+        get done() {
+            if(!this._done) {
+                this._done = new Array();
+            }
+            return this._done;
+        },
+        addAnimations: function() {
+            var style = document.createElement('style');
+            style.type = 'text/css';
+            style.innerHTML = 'object,embed{\
+                -webkit-animation-duration:.001s;-webkit-animation-name:playerInserted;\
+                -ms-animation-duration:.001s;-ms-animation-name:playerInserted;\
+                -o-animation-duration:.001s;-o-animation-name:playerInserted;\
+                animation-duration:.001s;animation-name:playerInserted;}\
+                @-webkit-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}\
+                @-ms-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}\
+                @-o-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}\
+                @keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}';
+            document.getElementsByTagName('head')[0].appendChild(style);
+        },
+        animationsHandler: function(e) {
+            if(e.animationName === 'playerInserted') {
+                this.replace(e.target);
+            }
+        },
+        replace: function(elem) {
+            if(this.done.indexOf(elem) != -1) return;
+            this.done.push(elem);
+            var player = elem.data || elem.src;
+            if(!player) return;
+            var i, find, replace = false;
+            for(i in this.rules) {
+                find = this.rules[i]['find'];
+                if(find.test(player)) {
+                    replace = this.rules[i]['replace'];
+                    if('function' === typeof this.rules[i]['preHandle']) {
+                        this.rules[i]['preHandle'].bind(this, elem, find, replace, player)();
+                    }else{
+                        this.reallyReplace.bind(this, elem, find, replace)();
+                    }
+                    break;
+                }
+            }
+        },
+        reallyReplace: function(elem, find, replace) {
+            elem.data && (elem.data = elem.data.replace(find, replace)) || elem.src && ((elem.src = elem.src.replace(find, replace)) && (elem.style.display = 'block'));
+            var b = elem.querySelector("param[name='movie']");
+            this.reloadPlugin(elem);
+        },
+        reloadPlugin: function(elem) {
+            var nextSibling = elem.nextSibling;
+            var parentNode = elem.parentNode;
+            parentNode.removeChild(elem);
+            var newElem = elem.cloneNode(true);
+            this.done.push(newElem);
+            if(nextSibling) {
+                parentNode.insertBefore(newElem, nextSibling);
+            } else {
+                parentNode.appendChild(newElem);
+            }
+        },
+        init: function() {
+            var handler = this.animationsHandler.bind(this);
+            document.body.addEventListener('webkitAnimationStart', handler, false);
+            document.body.addEventListener('msAnimationStart', handler, false);
+            document.body.addEventListener('oAnimationStart', handler, false);
+            document.body.addEventListener('animationstart', handler, false);
+            this.addAnimations();
+        }
+    };
+    new A().init();
+})();
+}
+// 20140730
+(function cnbeta() {
+    if (document.URL.indexOf('cnbeta.com') >= 0) {
+        var elms = document.body.querySelectorAll("p>embed");
+        Array.prototype.forEach.call(elms, function(elm) {
+            elm.style.marginLeft = "0px";
+        });
+    }
+})();
+// 20150108
+setTimeout(function(){
+    if (document.URL.indexOf('www.baidu.com') >= 0) {
+        var a = function(){
+            Array.prototype.forEach.call(document.body.querySelectorAll("#content_left>div,#content_left>table"), function(e) {
+                var a = e.getAttribute("style");
+                if(a && /display:(table|block)\s!important/.test(a)){
+                    e.removeAttribute("style")
+                }
+            });
+        };
+        a();
+        document.getElementById("su").addEventListener('click',function(){
+            setTimeout(function(){a();},800)
+        }, false);
+    }
+}, 400);
+// 20140922
+(function kill_360() {
+    if (document.URL.indexOf('so.com') >= 0) {
+        document.getElementById("e_idea_pp").style.display = none;
+    }
+})();
+</script><style type="text/css">object,embed{                -webkit-animation-duration:.001s;-webkit-animation-name:playerInserted;                -ms-animation-duration:.001s;-ms-animation-name:playerInserted;                -o-animation-duration:.001s;-o-animation-name:playerInserted;                animation-duration:.001s;animation-name:playerInserted;}                @-webkit-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}                @-ms-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}                @-o-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}                @keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}</style><style type="text/css">#yddContainer{display:block;font-family:Microsoft YaHei;position:relative;width:100%;height:100%;top:-4px;left:-4px;font-size:12px;border:1px solid}#yddTop{display:block;height:22px}#yddTopBorderlr{display:block;position:static;height:17px;padding:2px 28px;line-height:17px;font-size:12px;color:#5079bb;font-weight:bold;border-style:none solid;border-width:1px}#yddTopBorderlr .ydd-sp{position:absolute;top:2px;height:0;overflow:hidden}.ydd-icon{left:5px;width:17px;padding:0px 0px 0px 0px;padding-top:17px;background-position:-16px -44px}.ydd-close{right:5px;width:16px;padding-top:16px;background-position:left -44px}#yddKeyTitle{float:left;text-decoration:none}#yddMiddle{display:block;margin-bottom:10px}.ydd-tabs{display:block;margin:5px 0;padding:0 5px;height:18px;border-bottom:1px solid}.ydd-tab{display:block;float:left;height:18px;margin:0 5px -1px 0;padding:0 4px;line-height:18px;border:1px solid;border-bottom:none}.ydd-trans-container{display:block;line-height:160%}.ydd-trans-container a{text-decoration:none;}#yddBottom{position:absolute;bottom:0;left:0;width:100%;height:22px;line-height:22px;overflow:hidden;background-position:left -22px}.ydd-padding010{padding:0 10px}#yddWrapper{color:#252525;z-index:10001;background:url(chrome-extension://eopjamdnofihpioajgfdikhhbobonhbb/ab20.png);}#yddContainer{background:#fff;border-color:#4b7598}#yddTopBorderlr{border-color:#f0f8fc}#yddWrapper .ydd-sp{background-image:url(chrome-extension://eopjamdnofihpioajgfdikhhbobonhbb/ydd-sprite.png)}#yddWrapper a,#yddWrapper a:hover,#yddWrapper a:visited{color:#50799b}#yddWrapper .ydd-tabs{color:#959595}.ydd-tabs,.ydd-tab{background:#fff;border-color:#d5e7f3}#yddBottom{color:#363636}#yddWrapper{min-width:250px;max-width:400px;}</style></head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="http://www.bnuoj.com/v3/index.php">BNUOJ</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav" id="nav">
+              <li class="dropdown" id="problem"><a class="dropdown-toggle" data-toggle="dropdown" href="http://www.bnuoj.com/v3/problem.php">Problem <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li id="localp"><a href="http://www.bnuoj.com/v3/problem.php#oj=BNU">Local Problems</a></li>
+                  <li id="allp"><a href="http://www.bnuoj.com/v3/problem.php">All Problems</a></li>
+                  <li id="categoryp"><a href="http://www.bnuoj.com/v3/problem_category.php">Problem Category</a></li>
+                </ul>
+              </li>
+              <li id="status"><a href="http://www.bnuoj.com/v3/status.php">Status</a></li>
+              <li class="dropdown active" id="contest"><a class="dropdown-toggle" data-toggle="dropdown" href="http://www.bnuoj.com/v3/contest.php?type=50">Contest <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li id="stdcontest"><a href="http://www.bnuoj.com/v3/contest.php?type=50">Standard Contests</a></li>
+                  <li id="stdcontest"><a href="http://www.bnuoj.com/v3/contest.php?type=0">Contests (ICPC format)</a></li>
+                  <li id="cfcontest"><a href="http://www.bnuoj.com/v3/contest.php?type=1">Contests (CF format)</a></li>
+                  <li id="repcontest"><a href="http://www.bnuoj.com/v3/contest.php?type=99">Replay Contests</a></li>
+                  <li id="vcontest"><a href="http://www.bnuoj.com/v3/contest.php?virtual=1">Virtual Contests</a></li>
+                </ul>
+              </li>
+              <li id="ranklist"><a href="http://www.bnuoj.com/v3/ranklist.php">Ranklist</a></li>
+              <li id="discuss"><a href="http://www.bnuoj.com/v3/discuss.php">Discuss</a></li>
+              <li class="dropdown" id="more"><a class="dropdown-toggle" data-toggle="dropdown" href="http://www.bnuoj.com/v3/teaminfo.php">More... <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="http://www.bnuoj.com/v3/news.php">News</a></li>
+                  <li><a href="http://www.bnuoj.com/v3/teaminfo.php">Our Team</a></li>
+                  <li><a href="http://www.oiegg.com/forumdisplay.php?fid=407" target="_blank">BBS</a></li>
+                  <li class="divider"></li>
+                  <li><a href="http://www.bnuoj.com/v3/recent_contest.php">Recent Contests</a></li>
+                  <!--<li><a href="training_stat.php">Training Stats</a></li>-->
+                  <li class="divider"></li>
+                  <li class="disabled"><a>Coming Soon...</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul id="logoutbar" class="nav pull-right">
+              <li class="dropdown" id="userspace">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="http://www.bnuoj.com/v3/userinfo.php?name=694460987" id="displayname">694460987 <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="http://www.bnuoj.com/v3/userinfo.php?name=694460987">Show My Information</a></li>
+                  <li><a href="http://www.bnuoj.com/v3/contest_show.php?cid=6228#" id="modify">Modify My Information</a></li>
+                  <li><a href="http://www.bnuoj.com/v3/mail.php" id="mail">Mail</a></li>
+                  <li id="logoutbutton"><a href="http://www.bnuoj.com/v3/contest_show.php?cid=6228#" id="logout">Logout</a></li>
+                </ul>
+              </li>
+            </ul>
+            <p class="pull-right navbar-text"><span id="servertime">2015-05-01 20:32:40</span>&nbsp;</p>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+    <marquee class="hidden-phone" direction="left" behavior="alternate" scrollamount="2" style="position: absolute; width: 100%; margin-top: -21px;"><span style="color:red">
+<b>For BNUOJ v3, click <a href="http://www.bnuoj.com/v3">here</a>. For BNUOJ v2, click <a href="http://www.bnuoj.com/bnuoj">here</a>.</b></span><b>
+
+</b></marquee>
+    <div class="hidden-phone" id="marqueepos" style="height: 1px;"></div>
+<script>
+//var currenttime = 'Friday, May 1, 2015 20:32:15';
+var currenttime = '1430483535';
+var cookie_prefix = 'bnuoj_v3_';
+var default_style= 'cerulean';
+</script>
+    <div class="container" id="page-content">
+      <div class="row-fluid">
+      <ul class="nav nav-tabs" id="contest_nav">
+        <!-- <div class="btn-group"> -->
+          <li id="cinfo_a" class=""><a href="http://www.bnuoj.com/v3/contest_show.php?cid=6228#info">Information</a></li>
+          <li id="cprob_a" class="active" name="C"><a href="http://www.bnuoj.com/v3/contest_show.php?cid=6228#problem/0">Problems</a></li>
+          <li id="cstatus_a" class=""><a href="http://www.bnuoj.com/v3/contest_show.php?cid=6228#status">Status</a></li>
+          <li id="cstand_a" class=""><a href="http://www.bnuoj.com/v3/contest_show.php?cid=6228#standing">Standing</a></li>
+
+          <li id="cclar_a" class=""><a href="http://www.bnuoj.com/v3/contest_show.php?cid=6228#clarify">Clarify</a></li>
+          <li id="creport_a" class=""><a href="http://www.bnuoj.com/v3/contest_show.php?cid=6228#report">Report</a></li>
+          <div class="pull-right btn-group">
+            <a class="btn btn-info" id="cset_a">Settings</a>
+            <a href="http://www.bnuoj.com/v3/contest.php?type=50&open=1&clone=1&cid=6228" class="btn btn-info">Clone</a>
+          </div>
+        <!-- </div> -->
+      </ul>
+      <div id="contest_content">        <div class="span9">
+          <div id="showproblem">
+            <ul class="nav nav-pills" id="probpagi">
+              <li><a href="http://www.bnuoj.com/v3/contest_show.php?cid=6228#problem/A">A</a></li>
+              <li><a href="http://www.bnuoj.com/v3/contest_show.php?cid=6228#problem/B">B</a></li>
+              <li class="active"><a href="./C. Wax_files/C. Wax.html">C</a></li>
+              <li><a href="http://www.bnuoj.com/v3/contest_show.php?cid=6228#problem/D">D</a></li>
+              <li><a href="http://www.bnuoj.com/v3/contest_show.php?cid=6228#problem/E">E</a></li>
+            </ul>
+            <h2 style="text-align:center" class="pagetitle">C. Wax</h2>
+            <div id="conditions" class="well tcenter">
+                                              <div class="span6">Time Limit: 4000ms</div>
+              <div class="span6">Memory Limit: 32768KB</div>
+                                              64-bit integer IO format: <span class="badge badge-inverse">%I64d</span> &nbsp;&nbsp;&nbsp;&nbsp; Java class name: <span class="badge badge-inverse">Main</span>
+              <div id="spjinfo"><span class="badge badge-important">Special Judge</span></div>
+            </div>
+            <div class="functions tcenter" style="margin-bottom:20px">
+              <div class="btn-group">
+                <a href="http://www.bnuoj.com/v3/contest_show.php?cid=6228#" class="submitprob btn btn-primary">Submit</a>
+                <a href="http://www.bnuoj.com/v3/contest_show.php?cid=6228#status/C" class="btn">Status</a>
+                <a href="http://www.bnuoj.com/v3/problem_show.php?pid=7543" class="btn">PID: 7543</a>
+              </div>
+            </div>
+            <div class="content-wrapper well">
+You are a flooring contractor with bickering employees. You need to have these employees work together to wax the floor of some rooms, each with 1 door.<br><br>None of the workers want to work more than the others, and insist on working together so they can see if someone else is goofing off, so you must assign equal areas of each room to each employee. Each worker is assigned a contiguous portion of the room to wax. The portions assigned are separated by straight line segments that radiate out from the doorway to a wall in the room, so they can exit the room after the job is done.
+                <div style="clear:both"></div>
+            </div>
+            <h3> Input </h3>
+            <div class="content-wrapper well">
+The input is a series of problem definitions as follows:<br><br>WIDTH HEIGHT DOOR WORKERS<br><br>Each is a non-negative integer value less than or equal to 100, with at least 2 workers, and a positive WIDTH and HEIGHT. They specify the positions of the corners of the room: (0,0), (WIDTH,0), (WIDTH,HEIGHT), and (0,HEIGHT), as well as the location of the door: (DOOR,0), 0 &lt; DOOR &lt; WIDTH. Each problem definition is given on its own line.<br><br>The end of input is indicated by a list of 4 zeros:<br><br>0 0 0 0
+                <div style="clear:both"></div>
+            </div>
+            <h3> Output </h3>
+            <div class="content-wrapper well">
+The output are the coordinates, with 3 decimal digits of precision, of the ends of the WORKERS-1 line segments extending from the door to a wall of the room so that the room is divided into WORKERS parts with equal areas. The points should be given in counterclockwise order.
+                <div style="clear:both"></div>
+            </div>
+            <h3> Sample Input </h3>
+            <pre class="content-wrapper">3 5 2 4
+10 10 5 2
+10 10 5 4
+0 0 0 0</pre>
+            <h3> Sample Output </h3>
+            <pre class="content-wrapper">2.500 5.000 1.000 5.000 0.000 3.750
+5.000 10.000
+10.000 10.000 5.000 10.000 0.000 10.000</pre>
+            <div class="functions tcenter" style="margin-bottom:20px">
+              <div class="btn-group">
+                <a href="http://www.bnuoj.com/v3/contest_show.php?cid=6228#" class="submitprob btn btn-primary">Submit</a>
+                <a href="http://www.bnuoj.com/v3/contest_show.php?cid=6228#status/C" class="btn">Status</a>
+                <a href="http://www.bnuoj.com/v3/problem_show.php?pid=7543" class="btn">PID: 7543</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="span3">
+
+        <div class="well">
+            <h3>Notice</h3>
+            <p></p>
+
+        </div>
+
+        <div class="well">
+            <h3>VJudge Status</h3>
+            By checking remote status page every 10 minutes.
+            <table class="table table-hover table-striped table-condensed" width="100%">
+                <thead>
+                    <tr>
+                        <th width="70%">OJ</th>
+                        <th width="30%">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr title="Last Check: 2015-05-01 20:30:02, Normal" class="vjttip">
+                        <td>ACdream</td>
+                        <td><img src="./C. Wax_files/green_light.png"></td>
+                    </tr>
+                    <tr title="Last Check: 2015-05-01 20:30:03, Normal" class="vjttip">
+                        <td>Aizu</td>
+                        <td><img src="./C. Wax_files/green_light.png"></td>
+                    </tr>
+                    <tr title="Last Check: 2015-05-01 20:30:05, Normal" class="vjttip">
+                        <td>CodeChef</td>
+                        <td><img src="./C. Wax_files/green_light.png"></td>
+                    </tr>
+                    <tr title="Last Check: 2015-05-01 20:30:11, Normal" class="vjttip">
+                        <td>CodeForces</td>
+                        <td><img src="./C. Wax_files/green_light.png"></td>
+                    </tr>
+                    <tr title="Last Check: 2015-05-01 20:30:16, Normal" class="vjttip">
+                        <td>CodeForcesGym</td>
+                        <td><img src="./C. Wax_files/green_light.png"></td>
+                    </tr>
+                    <tr title="Last Check: 2015-05-01 20:30:16, Normal" class="vjttip">
+                        <td>FZU</td>
+                        <td><img src="./C. Wax_files/green_light.png"></td>
+                    </tr>
+                    <tr title="Last Check: 2015-05-01 20:30:17, Normal" class="vjttip">
+                        <td>HDU</td>
+                        <td><img src="./C. Wax_files/green_light.png"></td>
+                    </tr>
+                    <tr title="Last Check: 2015-05-01 20:30:17, Normal" class="vjttip">
+                        <td>HRBUST</td>
+                        <td><img src="./C. Wax_files/green_light.png"></td>
+                    </tr>
+                    <tr title="Last Check: 2015-05-01 20:30:17, Normal" class="vjttip">
+                        <td>HUST</td>
+                        <td><img src="./C. Wax_files/green_light.png"></td>
+                    </tr>
+                    <tr title="Last Check: 2015-05-01 20:30:18, Normal" class="vjttip">
+                        <td>LightOJ</td>
+                        <td><img src="./C. Wax_files/green_light.png"></td>
+                    </tr>
+                    <tr title="Last Check: 2015-05-01 20:30:21, Down: cannot connect." class="vjttip">
+                        <td>NBUT</td>
+                        <td><img src="./C. Wax_files/red_light.png"></td>
+                    </tr>
+                    <tr title="Last Check: 2015-05-01 20:30:22, Normal" class="vjttip">
+                        <td>NJUPT</td>
+                        <td><img src="./C. Wax_files/green_light.png"></td>
+                    </tr>
+                    <tr title="Last Check: 2015-05-01 20:30:22, Normal" class="vjttip">
+                        <td>OpenJudge</td>
+                        <td><img src="./C. Wax_files/green_light.png"></td>
+                    </tr>
+                    <tr title="Last Check: 2015-05-01 20:30:23, Normal" class="vjttip">
+                        <td>PKU</td>
+                        <td><img src="./C. Wax_files/green_light.png"></td>
+                    </tr>
+                    <tr title="Last Check: 2015-05-01 20:30:23, Normal" class="vjttip">
+                        <td>SCU</td>
+                        <td><img src="./C. Wax_files/green_light.png"></td>
+                    </tr>
+                    <tr title="Last Check: 2015-05-01 20:30:26, Normal" class="vjttip">
+                        <td>SGU</td>
+                        <td><img src="./C. Wax_files/green_light.png"></td>
+                    </tr>
+                    <tr title="Last Check: 2015-05-01 20:30:28, Normal" class="vjttip">
+                        <td>SPOJ</td>
+                        <td><img src="./C. Wax_files/green_light.png"></td>
+                    </tr>
+                    <tr title="Last Check: 2015-05-01 20:30:29, Normal" class="vjttip">
+                        <td>SYSU</td>
+                        <td><img src="./C. Wax_files/green_light.png"></td>
+                    </tr>
+                    <tr title="Last Check: 2015-05-01 20:30:29, Down: cannot connect." class="vjttip">
+                        <td>UESTC</td>
+                        <td><img src="./C. Wax_files/red_light.png"></td>
+                    </tr>
+                    <tr title="Last Check: 2015-05-01 20:30:31, Normal" class="vjttip">
+                        <td>Ural</td>
+                        <td><img src="./C. Wax_files/green_light.png"></td>
+                    </tr>
+                    <tr title="Last Check: 2015-05-01 20:30:34, Normal" class="vjttip">
+                        <td>UVA</td>
+                        <td><img src="./C. Wax_files/green_light.png"></td>
+                    </tr>
+                    <tr title="Last Check: 2015-05-01 20:30:39, Normal" class="vjttip">
+                        <td>UVALive</td>
+                        <td><img src="./C. Wax_files/green_light.png"></td>
+                    </tr>
+                    <tr title="Last Check: 2015-05-01 20:30:40, Normal" class="vjttip">
+                        <td>WHU</td>
+                        <td><img src="./C. Wax_files/green_light.png"></td>
+                    </tr>
+                    <tr title="Last Check: 2015-05-01 20:30:40, Normal" class="vjttip">
+                        <td>ZJU</td>
+                        <td><img src="./C. Wax_files/green_light.png"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+        </div>
+
+    <div id="submitdialog" class="modal hide fade" name="HDU">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4>Submit C: Wax</h4>
+      </div>
+      <form action="http://www.bnuoj.com/v3/ajax/contest_problem_submit.php" method="post" id="cprobsubmit" class="ajform form-horizontal">
+        <div class="modal-body">
+          <table width="100%">
+            <tbody><tr>
+              <th class="span4">Username: </th>
+              <td class="span8">694460987<input name="user_id" value="694460987" readonly="readonly" style="display:none"></td>
+            </tr>
+
+            <tr style="display:none">
+              <th>Label: </th>
+              <td>C<input name="lable" value="C" readonly="readonly" style="display:none"></td>
+            </tr>
+            <tr style="display:none">
+              <th>Contest: </th>
+              <td>6228<input name="contest_id" value="6228" readonly="readonly" style="display:none"></td>
+            </tr>
+            <tr>
+              <th>Language: </th>
+              <td style="text-align:left;">
+                <select name="language" id="lang" accesskey="l">
+                  <option value="1" selected="selected">GNU C++</option>
+                  <option value="2">GNU C</option>
+                  <option value="3">Oracle Java</option>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  <option value="11">SML</option>
+                  <option value="12">Visual C++</option>
+                  
+                  
+                  
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <th>Share Code?</th>
+              <td style="text-align:left;">
+                <div class="span2"><label class="radio"><input name="isshare" type="radio" style="width:16px" value="1" checked="checked">Yes</label></div>
+                <div class="span2"><label class="radio"><input name="isshare" type="radio" style="width:16px" value="0">No</label></div>
+              </td>
+            </tr>
+            <tr>
+              <th colspan="2">Source Code: </th>
+            </tr>
+            <tr>
+              <td colspan="2"><textarea rows="12" class="input-block-level" name="source" onkeyup="if(this.value.length &gt; 256000) this.value=this.value.substr(0,256000)" placeholder="Put your solution here..."></textarea></td>
+            </tr>
+            <tr>
+              <td colspan="2">The owner of the contest <b>WILL BE ABLE</b> to see your code.</td>
+            </tr>
+          </tbody></table>
+        </div>
+        <div class="modal-footer">
+          <span id="msgbox" style="display:none"></span>
+          <input name="login" class="btn btn-primary" type="submit" value="Submit">
+          <input name="reset" class="btn btn-danger" type="reset" value="Reset">
+        </div>
+      </form>
+    </div>
+
+
+
+<script type="text/javascript">
+var support_lang=["1","2","3","11","12"];
+</script>
+</div>
+      <div width="0px" id="temp_standing" style="display:none"></div>
+
+      <div id="csetdlg" class="modal hide fade">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h3>Standing Settings</h3>
+        </div>
+        <form id="csetform" action="http://www.bnuoj.com/v3/contest_show.php?cid=6228#" method="post">
+          <div class="modal-body">
+            <table width="100%" id="csettable" class="table table-striped table-hover table-condensed basetable">
+              <thead>
+                <tr><th width="5%"><input type="checkbox" id="csetall"></th><th width="10%">CID</th><th width="45%">Title</th><th width="20%">Start Time</th><th width="20%">End Time</th></tr>
+              </thead>
+              <tbody>
+                <tr><td><input type="checkbox" name="cid_6228" checked="checked"></td><td>6228</td><td><a href="http://www.bnuoj.com/v3/contest_show.php?cid=6228" target="_blank"><span style="color:blue"> [Virtual] </span>[Recurrence]2014 TJU Personal Rank Competition I</a></td><td>2015-05-01 14:00:00</td><td>2015-05-01 17:00:00</td></tr>
+                <tr><td><input type="checkbox" name="cid_6218" class="othc"></td><td>6218</td><td><a href="http://www.bnuoj.com/v3/contest_show.php?cid=6218" target="_blank"><span style="color:blue"> [Virtual] </span>CUIT Personal Training #2</a></td><td>2015-04-25 13:00:00</td><td>2015-04-25 16:00:00</td></tr>
+                <tr><td><input type="checkbox" name="cid_4234" class="othc"></td><td>4234</td><td><a href="http://www.bnuoj.com/v3/contest_show.php?cid=4234" target="_blank"><span style="color:blue"> [Virtual] </span>2014 TJU Personal Rank Competition I</a></td><td>2014-07-09 14:00:00</td><td>2014-07-09 17:00:00</td></tr>
+              </tbody>
+            </table>
+            <div class="well">
+              <label class="radio"><input type="radio" name="shownum" value="0"> Show All Teams ( Do NOT try this with auto refresh in IE&lt;9 ) </label>
+              <label class="radio"><input type="radio" name="shownum" value="50"> Show top 50 teams </label>
+              <label class="radio"><input type="radio" name="shownum" value="100" checked="checked"> Show top 100 teams </label>
+              <label class="checkbox"><input type="checkbox" name="autoref" id="autoref"> Auto Refresh (10 Seconds) </label>
+              <label class="checkbox"><input type="checkbox" name="anim" id="animate"> Animation? ( Only show top 16 teams, Chrome RECOMMENDED! ) </label>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <input name="login" class="btn btn-primary" type="submit" value="Confirm &amp; Show">
+          </div>
+          <input type="hidden" name="cid" value="6228">
+        </form>
+      </div>
+
+<script type="text/javascript">
+var statperpage = 20;
+var gcid = '6228';
+var cpass= true;
+var cnt=0;
+var stp=-1;
+var refrate=3000;
+var lim_times=10;
+</script>
+<link href="./C. Wax_files/prettify.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="./C. Wax_files/prettify.js"></script>
+<script type="text/javascript" src="./C. Wax_files/animator.js"></script>
+<script type="text/javascript" src="./C. Wax_files/rankingTableUpdate.js"></script>
+<script type="text/javascript" src="./C. Wax_files/contest_show.js"></script>
+      </div><!--/row-->
+
+      <hr>
+      <footer id="footer">
+        <p>
+          Distributed under GPLv3. | <a href="https://github.com/51isoft/bnuoj" target="_blank">Project Homepage</a> | Developer: <a href="mailto:yichaonet#gmail.com">51isoft</a> <a href="mailto:crccw@moonux.org">crccw</a> | Current Style: <b id="stylename">Cerulean</b>.
+        </p>
+        <form class="form-inline">
+          <label class="select">
+            Select Style: <select class="input-medium" id="selstyle">
+              <option value="cerulean">Cerulean</option>
+              <option value="cyborg">Cyborg</option>
+              <option value="cosmo">Cosmo</option>
+              <option value="amelia">Amelia</option>
+              <option value="simplex">Simplex</option>
+              <option value="spacelab">Spacelab</option>
+              <option value="spruce">Spruce</option>
+              <option value="superhero">Superhero</option>
+              <option value="united">United</option>
+              <option value="journal">Journal</option>
+              <option value="readable">Readable</option>
+              <option value="slate">Slate</option>
+              <option value="darkening">Darkening</option>
+              <option value="original">Original</option>
+              <option value="metro">Metro</option>
+              <option value="geo">Geo</option>
+            </select>
+          </label>
+          <label class="checkbox"> <input type="checkbox" id="selwidth">Fluid Width?</label>
+        </form>
+      </footer>
+    </div><!--/.fluid-container-->
+
+    <div id="modifydialog" class="modal hide fade">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3>Modify My Information</h3>
+      </div>
+      <form method="post" action="http://www.bnuoj.com/v3/ajax/user_modify.php" id="modify_form" class="form-horizontal ajform">
+        <div class="modal-body">
+          <div class="control-group">
+            <label class="control-label" for="rusername">Username: </label>
+            <div class="controls">
+              <input type="text" name="username" id="rusername" placeholder="Username" value="694460987" readonly="">
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="ropassword">Old Password: </label>
+            <div class="controls">
+              <input type="password" name="ol_password" id="ropassword" placeholder="Old Password">
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="rpassword">New Password: </label>
+            <div class="controls">
+              <input type="password" name="password" id="rpassword" placeholder="New Password">
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="rrpassword">Repeat Password: </label>
+            <div class="controls">
+              <input type="password" name="repassword" id="rrpassword" placeholder="Repeat Password">
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="rnickname">Nickname: </label>
+            <div class="controls">
+              <input type="text" name="nickname" id="rnickname" placeholder="Nickname" value="Ph0en1x">
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="rschool">School: </label>
+            <div class="controls">
+              <input type="text" name="school" id="rschool" placeholder="School" value="TJU">
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="remail">Email: </label>
+            <div class="controls">
+              <input type="text" name="email" id="remail" placeholder="Email" value="">
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <span id="msgbox" style="display:none"></span>
+          <input class="btn btn-primary" type="submit" name="name" value="Modify">
+        </div>
+      </form>
+    </div>
+    <div id="newsshowdialog" class="modal hide fade" style="display:none">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="ntitle">News Title</h3>
+      </div>
+      <div class="modal-body">
+        <div style="margin-bottom:10px">by <b id="snauthor"></b> <span id="sntime"></span></div>
+        <div id="sncontent"></div>
+      </div>
+    </div>
+<script src="./C. Wax_files/end.js"></script>
+  
+
+</body></html>

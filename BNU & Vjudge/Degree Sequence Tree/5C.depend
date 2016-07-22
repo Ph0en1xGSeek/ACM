@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1468650921 source:c:\users\tjuacm_lyj\desktop\5c\main.cpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+	<algorithm>
+	<map>
+	<queue>
+	<vector>
+

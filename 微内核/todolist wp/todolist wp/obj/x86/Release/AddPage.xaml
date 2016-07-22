@@ -1,0 +1,40 @@
+﻿<Page
+    x:Class="todolist_wp.AddPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:todolist_wp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="1,70,0,0" TextWrapping="Wrap" Width="63" FontSize="26.667" Height="34" VerticalAlignment="Top">
+    		<Run Text="Title"/>
+    		<Run Text=":"/>
+        </TextBlock>
+        <TextBox x:Name="textBox" Margin="69,68,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="36" BorderBrush="{x:Null}">
+            <TextBox.Background>
+                <SolidColorBrush Color="White"/>
+            </TextBox.Background>
+        </TextBox>
+        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Height="29" Margin="1,125,0,0" TextWrapping="Wrap" Text="Date:" VerticalAlignment="Top" Width="99" FontSize="26.667"/>
+        <DatePicker x:Name="datePicker" HorizontalAlignment="Left" Margin="85,115,0,0" Width="164" Height="48" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock_Copy2" Height="38" Margin="4,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="26.667" RenderTransformOrigin="0.486,0.504" HorizontalAlignment="Left" Width="60">
+        	<Run Text="Time"/>
+        	<Run Text=":"/>
+        </TextBlock>
+        <TimePicker x:Name="timePicker" Margin="85,172,151,0" Height="48" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock_Copy1" Height="34" Margin="0,228,0,0" TextWrapping="Wrap" Text="Description:" VerticalAlignment="Top" FontSize="26.667" HorizontalAlignment="Left" Width="147"/>
+        <TextBox x:Name="textBox1" Margin="0,267,0,53" TextWrapping="Wrap" Text="" VerticalAlignment="Stretch" BorderBrush="{x:Null}">
+            <TextBox.Background>
+                <SolidColorBrush Color="White"/>
+            </TextBox.Background>
+        </TextBox>
+        <AppBarButton x:ConnectionId='1' x:Name="appBarButton" HorizontalAlignment="Left" Icon="Back" Label="" Margin="-10,-2,0,0" VerticalAlignment="Top" Height="58"                           />
+        <TextBlock x:Name="textBlock_Copy3" HorizontalAlignment="Left" Height="58" Margin="64,5,0,0" TextWrapping="Wrap" Text="New" VerticalAlignment="Top" Width="296" FontSize="48"/>
+        <AppBarButton x:ConnectionId='2' x:Name="appBarButton1" HorizontalAlignment="Stretch" Icon="Accept" Label="" Margin="163,0,157,-1" VerticalAlignment="Bottom" Height="61"                            />
+
+    </Grid>
+</Page>
+

@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1437837564 source:c:\users\phoenix geek\desktop\dungeon master\main.cpp
+	<iostream>
+	<cstring>
+

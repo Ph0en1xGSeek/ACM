@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1469149776 source:c:\users\ljc\desktop\it's all in the mind\main.cpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+	<algorithm>
+

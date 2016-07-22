@@ -1,0 +1,16 @@
+Set1's size: 1345
+Set2's size: 1138
+Set3's size: 1592
+Set1's size: 1345
+Set2's size: 1138
+Set3's size: 1592
+modSet1's size: 1345
+modSet2's size: 1138
+Set1's size: 1345
+Set2's size: 1138
+Set3's size: 1592
+modSet1's size: 741
+modSet2's size: 434
+
+Process returned 0 (0x0)   execution time : 2.656 s
+Press any key to continue.

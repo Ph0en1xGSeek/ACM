@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1440566798 source:c:\users\ph0en1x\desktop\goldbach's conjecture\main.cpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+

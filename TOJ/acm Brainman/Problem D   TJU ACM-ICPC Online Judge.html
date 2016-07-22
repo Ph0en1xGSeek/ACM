@@ -1,0 +1,62 @@
+
+<!-- saved from url=(0051)http://acm.tju.edu.cn/toj/vcontest/showp9876_D.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Pragma" content="no-cache">
+<title>Problem D | TJU ACM-ICPC Online Judge</title></head><body>
+<center><a href="http://acm.tju.edu.cn/toj/"><img src="./Problem D   TJU ACM-ICPC Online Judge_files/head.jpg" width="770" height="80" alt="Tianjin University Online Judge" border="0"></a><font face="Times New Roman"><br>
+<table width="80%" border="0"><tbody><tr align="center"><td width="17%"><a href="http://acm.tju.edu.cn/toj/vcontest/contest9876.html"><font color="green" size="+1">Problems</font></a></td><td width="16%"><a href="http://acm.tju.edu.cn/toj/vcontest/submit.php?cid=9876&pid=D"><font color="green" size="+1">Submit</font></a></td><td width="17%"><a href="http://acm.tju.edu.cn/toj/vcontest/status.php?cid=9876"><font color="green" size="+1">Runs Status</font></a></td><td width="17%"><a href="http://acm.tju.edu.cn/toj/vcontest/ranklist9876.html"><font color="green" size="+1">Rank List</font></a></td><td width="17%"><a href="http://acm.tju.edu.cn/toj/vcontest/stat9876.html"><font color="green" size="+1">Statistics</font></a></td><td><a href="http://acm.tju.edu.cn/toj/forum.php" target="_blank"><font color="green" size="+1">Clarifications</font></a></td></tr></tbody></table>
+</font></center><hr><font face="Times New Roman">
+<div style="background-image:url(../pics/bgt.gif)"><center><font size="+2">D.</font> &nbsp; <font size="+2" color="blue">Brainman</font></center>
+<hr><center><font color="green">Time Limit:</font> 1.0 Seconds&nbsp; &nbsp;<font color="green">Memory Limit: </font>65536K</center><hr><br><br>
+<span lang="en"><p>Raymond Babbitt drives his brother Charlie mad. Recently Raymond counted 246 toothpicks spilled all over the floor in an instant just by glancing at them. And he can even count Poker cards. Charlie would love to be able to do cool things like that, too. He wants to beat his brother in a similar task.</p>
+<p></p>
+<p>Here's what Charlie thinks of. Imagine you get a sequence of N numbers. The goal is to move the numbers around so that at the end the sequence is ordered. The only operation allowed is to swap two adjacent numbers. Let us try an example:</p>
+<p></p><center><tt><pre>Start with: 2 8 0 3
+swap  (2 8) 8 2 0 3
+swap  (2 0) 8 0 2 3
+swap  (2 3) 8 0 3 2
+swap  (8 0) 0 8 3 2
+swap  (8 3) 0 3 8 2
+swap  (8 2) 0 3 2 8
+swap  (3 2) 0 2 3 8
+swap  (3 8) 0 2 8 3
+swap  (8 3) 0 2 3 8
+</pre></tt></center><p></p>
+<p>So the sequence (2 8 0 3) can be sorted with nine swaps of adjacent numbers. However, it is even possible to sort it with three such swaps:</p>
+<p></p><center><tt><pre>Start with: 2 8 0 3
+swap  (8 0) 2 0 8 3
+swap  (2 0) 0 2 8 3
+swap  (8 3) 0 2 3 8
+</pre></tt></center><p></p>
+<p>The question is: What is the minimum number of swaps of adjacent numbers to sort a given sequence?Since Charlie does not have Raymond's mental capabilities, he decides to cheat. Here is where you come into play. He asks you to write a computer program for him that answers the question. Rest assured he will pay a very good prize for it.</p>
+<b>Input</b>
+<p>
+The first line contains the number of scenarios.</p>
+<p>For every scenario, you are given a line containing first the length N (1 ≤ N ≤ 1000) of the sequence,followed by the N elements of the sequence (each element is an integer in [-1000000, 1000000]). All numbers in this line are separated by single blanks.</p>
+<b>Output</b>
+<p>
+Start the output for every scenario with a line containing "Scenario #i:", where i is the number of the scenario starting at 1. Then print a single line containing the minimal number of swaps of adjacent numbers that are necessary to sort the given sequence. Terminate the output for the scenario with a blank line.</p>
+<b>Sample Input</b>
+<p><tt></tt></p><pre><tt>4
+4 2 8 0 3
+10 0 1 2 3 4 5 6 7 8 9
+6 -42 23 6 28 -100 65537
+5 0 0 0 0 0</tt></pre><p></p>
+<b>Sample Output</b>
+<p><tt></tt></p><pre><tt>Scenario #1:
+3
+
+Scenario #2:
+0
+
+Scenario #3:
+5
+
+Scenario #4:
+0
+</tt></pre><p></p>
+<br><br></span><font face="Lucida Handwriting,Arial" color="red"><b>Source:</b>&nbsp; <i><a style="text-decoration: none; color: red" href="http://acm.tju.edu.cn/toj/search_process.php?s=TUD+Programming+Contest+2003">TUD Programming Contest 2003</a></i></font><font face="Arial"><br><br><a href="http://acm.tju.edu.cn/toj/showp1720.html">Problem ID in problemset: 1720</a></font><br><br>
+<hr><center><b><a href="http://acm.tju.edu.cn/toj/vcontest/submit.php?cid=9876&pid=D">Submit</a>&nbsp; &nbsp;<a href="http://acm.tju.edu.cn/toj/vcontest/contest9876.html"><font color="00C000">Back</font></a>&nbsp; &nbsp;<a href="http://acm.tju.edu.cn/toj/vcontest/status.php?cid=9876&pid=D"><font color="black">Runs</font></a>&nbsp; &nbsp;<a href="http://acm.tju.edu.cn/toj/problem_stat.php?pid=1720" target="_blank">Statistics</a>&nbsp; &nbsp;<a href="http://acm.tju.edu.cn/toj/forum.php?pid=1720" target="_blank"><font color="006060">Clarifications</font></a></b></center>
+<hr><center><a href="http://acm.tju.edu.cn/toj/"><font color="blue">Tianjin University Online Judge</font></a> <font color="red">v1.2.4</font></center>
+</div>
+</font></body></html>

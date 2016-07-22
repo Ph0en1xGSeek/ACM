@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1437459657 source:c:\users\phoenix geek\desktop\arbitrage\main.cpp
+	<iostream>
+	<map>
+	<cstring>
+	<string>
+

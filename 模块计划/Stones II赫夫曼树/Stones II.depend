@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1455545244 source:c:\users\ph0en1x\desktop\stones ii\main.cpp
+	<iostream>
+	<stdio.h>
+	<queue>
+	<vector>
+
