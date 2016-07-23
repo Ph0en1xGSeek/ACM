@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1469236658 source:c:\users\ljc\desktop\obstacles\main.cpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+	<algorithm>
+
