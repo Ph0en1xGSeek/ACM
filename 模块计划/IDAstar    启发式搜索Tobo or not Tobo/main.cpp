@@ -6,7 +6,7 @@
 using namespace std;
 int pan[13];
 int r, limit, flag;
-int rotation[4][4] = {{0,1,4,3},{1,2,5,4},{3,4,7,6},{4,5,8,7}};
+int rotation[4][4] = {{0,1,4,3},{1,2,5,4},{3,4,7,6},{4,5,8,7}};///转动的位置
 
 int h(int* b)//曼哈顿
 {
@@ -16,9 +16,9 @@ int h(int* b)//曼哈顿
     return (ans+3)/4;
 }
 
-void change(int* b, int kind)
+void change(int* b, int kind)///0~8 A逆A顺B逆B顺……CCDD
 {
-    if(kind&1)//顺时针
+    if(kind&1)///顺时针
     {
         kind >>= 1;
         int tmp = b[rotation[kind][3]];
@@ -36,19 +36,19 @@ void change(int* b, int kind)
     }
 }
 
-void IDAstar(int* b, int deep, int pre)//矩阵，还能走，之前走法
+void IDAstar(int* b, int deep, int pre)///矩阵，还能走，之前走法
 {
     if(flag || h(b) > deep)
         return;
     if(deep == 0 && h(b) == 0)
     {
-        flag = 1;
+        flag = 1;///找到
         return;
     }
     for(int i = 0; i < 8; i++)
     {
         if(pre != -1 && pre/2 == i/2 && (pre%2)^(i%2))
-            continue;//相反步和第一步
+            continue;///相反步和第一步不考虑
         int tmp[9];
         for(int j = 0; j < 9; j++)
             tmp[j] = b[j];
@@ -67,7 +67,7 @@ int main()
         for(int i = 1; i <= 9; i++)
             pan[i-1] = s[i] - '0';
         flag = 0;
-        for(limit = h(pan); limit <= r; limit++)
+        for(limit = h(pan); limit <= r; limit++)///迭代加深
         {
             IDAstar(pan, limit, -1);
             if(flag)
@@ -76,7 +76,6 @@ int main()
                 break;
             }
         }
-
         if(!flag)
             printf("%d. -1\n", ca++);
     }
