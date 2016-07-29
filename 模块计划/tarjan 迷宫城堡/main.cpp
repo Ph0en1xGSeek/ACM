@@ -27,10 +27,10 @@ void tarjan(int x)
             tarjan(v);
             low[x] = min(low[x], low[v]);
         }
-        else if(vis[v] == 1)
+        else if(vis[v] == 1)///v还在栈中 若不在栈中则为强连通分量之间的边
             low[x] = min(low[x], dfn[v]);
     }
-    if(dfn[x] == low[x])
+    if(dfn[x] == low[x])///以x为根的子树是一个强连通分量
     {
         int tmp;
         counts++;
