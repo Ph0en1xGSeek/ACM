@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1469942697 source:c:\users\ljc\desktop\9c\main.cpp
+	<iostream>
+	<map>
+	<cmath>
+	<stdio.h>
+
