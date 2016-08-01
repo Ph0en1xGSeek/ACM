@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1469883573 source:c:\users\ljc\desktop\z3\main.cpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+	<algorithm>
+
+1470013597 source:c:\users\ljc\desktop\abs\main.cpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+	<algorithm>
+	<cmath>
+
