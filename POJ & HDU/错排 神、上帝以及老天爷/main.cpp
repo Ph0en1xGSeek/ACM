@@ -2,8 +2,8 @@
 #include <cstdio>
 #include <iomanip>
 using namespace std;
-int A[22] = {0, 1, 2, 6};
-int b[22] = {0, 0, 1, 2};
+long long A[22] = {0, 1, 2, 6};
+long long b[22] = {0, 0, 1, 2};
 
 int main()
 {
@@ -13,10 +13,10 @@ int main()
         b[i] = (i-1)*(b[i-1]+b[i-2]);
     }
     int ca, n;
-    cin >> ca;
+    scanf("%d", &ca);
     while(ca--)
     {
-        cin>>n;
+        scanf("%d", &n);
         cout << setprecision(2)<<fixed<<((b[n]*1.0)/A[n])*100<<"%"<<endl;
     }
     return 0;
