@@ -26,6 +26,8 @@ int main()
                 if(arr1[i] == arr2[j])
                     dp[i][j] = dp[i-1][j-1] + 1;
                 dp[i][j] = ((((dp[i][j] + dp[i-1][j])%mod + dp[i][j-1])%mod) - dp[i-1][j-1] + mod)%mod;
+                ///只用了ai+只用了bj-既没用ai又没用ai与bj（前面算重了）
+                ///如果ai==bj ai与bj都算上时就有dp[i-1][j-1]种，加上只有ai和bj的一种
             }
         printf("%lld\n", dp[n][m]);
     }
