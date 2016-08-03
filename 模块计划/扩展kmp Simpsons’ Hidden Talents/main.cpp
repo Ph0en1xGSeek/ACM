@@ -49,8 +49,11 @@ int main()
         int ans = 0;
         for(int i = 0; i < len; i++)
         {
-            if(ex[i] > ans && i + ex[i] == len)
+            if(i + ex[i] == len)
+            {
                 ans  = ex[i];
+                break;
+            }
         }
         if(ans)
         {
