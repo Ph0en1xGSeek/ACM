@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1469238301 source:c:\users\ljc\desktop\acm\toj\a multiplication game\main.cpp
+	<iostream>
+	<stdio.h>
+	<math.h>
+
