@@ -33,7 +33,7 @@ int main()
         ll j = min(n, m);
         ll ans = 0;
         for(ll i = 1; i <= j; i++)
-            ans += i*c(n, i)*c(m, i);
+            ans += i*c(n, i)*c(m, i);///第一个i为权重
         ll y = c(n+m, n);
         ll x = gcd(ans, y);
         cout << ans/x << '/' <<  y/x << endl;
