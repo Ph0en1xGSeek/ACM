@@ -3,10 +3,10 @@
 using namespace std;
 
 int arr[25][25];
-int lei[25] = {0};
+bool lei[25] = {0};///集合编号
 int ans = 0;
 int num;
-void dfs(int id, int data)
+void dfs(int id, int data)///递归枚举两个集合
 {
     lei[id] = 1;
     int temp = data;

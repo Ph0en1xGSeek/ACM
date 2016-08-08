@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1470550856 source:c:\users\ljc\desktop\simple puzzle\main.cpp
+	<iostream>
+	<stdio.h>
+	<algorithm>
+	<string.h>
+

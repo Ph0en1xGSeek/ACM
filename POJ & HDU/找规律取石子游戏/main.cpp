@@ -3,6 +3,7 @@
 using namespace std;
 int fbnq[50] = {1, 1, 2, 3};
 
+/**找规律会发现斐波那契数为必败态**/
 
 int main()
 {

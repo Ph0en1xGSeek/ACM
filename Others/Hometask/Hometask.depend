@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1470559434 source:c:\users\ljc\desktop\hometask\main.cpp
+	<iostream>
+	<cstdio>
+	<cstring>
+	<algorithm>
+
