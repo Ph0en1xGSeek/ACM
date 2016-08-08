@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1470543547 source:c:\users\ljc\desktop\ray\main.cpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+	<algorithm>
+	<math.h>
+	<stdlib.h>
+	<iomanip>
+
