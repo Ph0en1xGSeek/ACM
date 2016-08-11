@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1470883735 source:c:\users\ljc\desktop\partial tree\main.cpp
+	<iostream>
+	<stdio.h>
+	<algorithm>
+	<string.h>
+
