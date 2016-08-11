@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1470919803 source:c:\users\ljc\desktop\zb\main.cpp
+	<iostream>
+	<cstring>
+	<cstdio>
+	<algorithm>
+	<cmath>
+
