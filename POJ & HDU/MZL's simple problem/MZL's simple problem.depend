@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1471315922 source:c:\users\ljc\desktop\mzl's simple problem\main.cpp
+	<iostream>
+	<stdio.h>
+	<algorithm>
+	<string.h>
+	<queue>
+
