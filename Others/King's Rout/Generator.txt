@@ -1,0 +1,85 @@
+题解：记录第一大和第二大的数，并且第二大的数不能被k整除，求出所有行中最小的这个第二个数。如果最大的数的所有总和被k整除，就用这个数去换，记得用数组记录选取的数的下标。鸽笼原理最多c个数，如果算过就可以跳出，用动态数组记录。
+
+#include <iostream>
+#include <cstdio>
+#include <cmath>
+#include <cstring>
+#include <vector>
+using namespace std;
+const int maxn=1e6+5;
+const int mm=100005;
+bool vis[maxn];
+int f1[maxn],f2[maxn];
+int main()
+{
+    freopen("generators.in","r",stdin);
+    freopen("generators.out","w",stdout);
+    int n,k,ans=0,tmp=mm,flag=-1;
+    scanf("%d%d",&n,&k);
+    for(int i=0; i<n; i++)
+    {
+
+        int x,a,b,c;
+        scanf("%d%d%d%d",&x,&a,&b,&c);
+        for(int j=0; j<c; j++)
+            vis[j]=0;
+        vector <int> data;
+        for(int j=0; j<c; j++)
+        {
+            if(vis[x]) break;
+            vis[x]=1;
+            data.push_back(x);
+            x=(a*x+b)%c;
+        }
+        int max1=-1,max1i=-1;
+        for (int i = 0; i < data.size(); i++)
+        {
+            if (data[i] > max1)
+            {
+                max1 = data[i];
+                max1i = i;
+            }
+        }
+        ans+=max1;
+        int max2=-1,max2i=-1;
+        int tmp2=max1%k;
+        for (int i = 0; i < data.size(); i++)
+        {
+            if (data[i] > max2&&(data[i]%k)!=tmp2)
+            {
+                max2 = data[i];
+                max2i = i;
+            }
+        }
+        f1[i]=max1i;
+        f2[i]=max2i;
+        int minn=max1-max2;
+        if(max2i!=-1&&minn<tmp)
+        {
+            tmp=minn;
+            flag=i;
+        }
+        //cout<<max1<<"   "<<max2<<endl;
+    }
+    if(ans%k==0&&flag==-1)
+    {
+        cout<<-1<<endl;
+    }
+    else if(ans%k==0)
+    {
+        f1[flag]=f2[flag];
+        ans-=tmp;
+        cout<<ans<<endl;
+        for(int i=0;i<n-1;i++)
+        cout<<f1[i]<<" ";
+        cout<<f1[n-1]<<endl;
+    }
+    else
+    {
+        cout<<ans<<endl;
+        for(int i=0;i<n-1;i++)
+        cout<<f1[i]<<" ";
+        cout<<f1[n-1]<<endl;
+    }
+    return 0;
+}
