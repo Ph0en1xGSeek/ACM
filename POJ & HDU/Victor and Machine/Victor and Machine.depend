@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1471357976 source:/media/ph0en1x/Android/ACM/Victor and Machine/main.cpp
+	<iostream>
+	<stdio.h>
+	<algorithm>
+	<string.h>
+
