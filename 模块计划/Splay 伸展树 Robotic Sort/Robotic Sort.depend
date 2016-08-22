@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1471867225 source:/home/ph0en1x/桌面/Robotic Sort/main.cpp
+	<iostream>
+	<stdio.h>
+	<algorithm>
+	<string.h>
+
