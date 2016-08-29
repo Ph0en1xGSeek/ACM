@@ -32,3 +32,5 @@ C:\Users\Ph0en1x\Desktop\CourseSystem\CourseSystem\obj\Debug\ChangeWindow1.g.cs
 C:\Users\Ph0en1x\Desktop\CourseSystem\CourseSystem\obj\Debug\ChangeWindow2.g.cs
 C:\Users\Ph0en1x\Desktop\CourseSystem\CourseSystem\obj\Debug\ChangeWindow1.baml
 C:\Users\Ph0en1x\Desktop\CourseSystem\CourseSystem\obj\Debug\ChangeWindow2.baml
+P:\ACM\微内核\CourseSystem\CourseSystem\obj\Debug\CourseSystem.exe
+P:\ACM\微内核\CourseSystem\CourseSystem\obj\Debug\CourseSystem.pdb

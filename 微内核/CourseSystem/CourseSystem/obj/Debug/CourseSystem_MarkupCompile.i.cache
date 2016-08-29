@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Ph0en1x\Desktop\CourseSystem\CourseSystem\obj\Debug\
+P:\ACM\微内核\CourseSystem\CourseSystem\obj\Debug\
 CourseSystem
 none
 false
 DEBUG;TRACE
-C:\Users\Ph0en1x\Desktop\CourseSystem\CourseSystem\App.xaml
+P:\ACM\微内核\CourseSystem\CourseSystem\App.xaml
 11-633223301
 
 16-247537843
-161820726237
+16-1553499559
 AddWindow1.xaml;AddWindow2.xaml;ChangeWindow1.xaml;ChangeWindow2.xaml;ChartWindow.xaml;ClassWindow.xaml;CourseWindow.xaml;MainWindow.xaml;ScoreWindow.xaml;StudentWindow.xaml;Window7.xaml;
 
-False
+True
 
