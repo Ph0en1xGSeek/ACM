@@ -9,7 +9,7 @@
     <SolutionConfiguration>Release|x86</SolutionConfiguration>
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>5cb4c2ab-1d86-4e32-9eaf-1cba1d382a78</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\Ph0en1x\Desktop\todolist windows App1\todolist windows App1\obj\x86\Release\</IntermediateOutputPath>
+    <IntermediateOutputPath>P:\ACM\微内核\todolist windows App1\todolist windows App1\obj\x86\Release\</IntermediateOutputPath>
     <RegisteredManifestChecksum>E961BFEB3917FAFCDB7B75AD618008CE8DDFAD60E14B2361215B1D90264B5E58</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>5cb4c2ab-1d86-4e32-9eaf-1cba1d382a78_1.0.0.0_x86__b65gjjh4yhxpg</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>5cb4c2ab-1d86-4e32-9eaf-1cba1d382a78_b65gjjh4yhxpg!App</RegisteredUserModeAppID>
@@ -19,78 +19,78 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Ph0en1x\Desktop\todolist windows App1\todolist windows App1\bin\x86\Release\ilc\AppxManifest.xml">
+    <AppXManifest Include="P:\ACM\微内核\todolist windows App1\todolist windows App1\bin\x86\Release\ilc\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-05-13T13:50:52.598</Modified>
+      <Modified>2016-09-02T15:50:40.542</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Ph0en1x\Desktop\todolist windows App1\todolist windows App1\bin\x86\Release\ilc\ApplicationInsights.config">
+    <AppxPackagedFile Include="P:\ACM\微内核\todolist windows App1\todolist windows App1\bin\x86\Release\ilc\ApplicationInsights.config">
       <PackagePath>ApplicationInsights.config</PackagePath>
-      <Modified>2016-05-08T12:41:08.795</Modified>
+      <Modified>2016-08-20T12:40:58.877</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ph0en1x\Desktop\todolist windows App1\todolist windows App1\bin\x86\Release\ilc\Assets\1.jpg">
+    <AppxPackagedFile Include="P:\ACM\微内核\todolist windows App1\todolist windows App1\bin\x86\Release\ilc\Assets\1.jpg">
       <PackagePath>Assets\1.jpg</PackagePath>
-      <Modified>2016-05-10T06:33:49.063</Modified>
+      <Modified>2016-08-20T12:40:58.878</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ph0en1x\Desktop\todolist windows App1\todolist windows App1\bin\x86\Release\ilc\Assets\2.jpg">
+    <AppxPackagedFile Include="P:\ACM\微内核\todolist windows App1\todolist windows App1\bin\x86\Release\ilc\Assets\2.jpg">
       <PackagePath>Assets\2.jpg</PackagePath>
-      <Modified>2016-05-10T06:32:36.177</Modified>
+      <Modified>2016-08-20T12:40:58.879</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ph0en1x\Desktop\todolist windows App1\todolist windows App1\bin\x86\Release\ilc\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="P:\ACM\微内核\todolist windows App1\todolist windows App1\bin\x86\Release\ilc\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2015-07-20T11:06:24.000</Modified>
+      <Modified>2016-08-20T12:40:58.879</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ph0en1x\Desktop\todolist windows App1\todolist windows App1\bin\x86\Release\ilc\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="P:\ACM\微内核\todolist windows App1\todolist windows App1\bin\x86\Release\ilc\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-07-20T11:06:24.000</Modified>
+      <Modified>2016-08-20T12:40:58.879</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ph0en1x\Desktop\todolist windows App1\todolist windows App1\bin\x86\Release\ilc\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="P:\ACM\微内核\todolist windows App1\todolist windows App1\bin\x86\Release\ilc\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-07-20T11:06:24.000</Modified>
+      <Modified>2016-08-20T12:40:58.879</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ph0en1x\Desktop\todolist windows App1\todolist windows App1\bin\x86\Release\ilc\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="P:\ACM\微内核\todolist windows App1\todolist windows App1\bin\x86\Release\ilc\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-07-20T11:06:24.000</Modified>
+      <Modified>2016-08-20T12:40:58.880</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ph0en1x\Desktop\todolist windows App1\todolist windows App1\bin\x86\Release\ilc\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="P:\ACM\微内核\todolist windows App1\todolist windows App1\bin\x86\Release\ilc\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-07-20T11:06:24.000</Modified>
+      <Modified>2016-08-20T12:40:58.880</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ph0en1x\Desktop\todolist windows App1\todolist windows App1\bin\x86\Release\ilc\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="P:\ACM\微内核\todolist windows App1\todolist windows App1\bin\x86\Release\ilc\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-07-20T11:06:24.000</Modified>
+      <Modified>2016-08-20T12:40:58.880</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ph0en1x\Desktop\todolist windows App1\todolist windows App1\bin\x86\Release\ilc\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="P:\ACM\微内核\todolist windows App1\todolist windows App1\bin\x86\Release\ilc\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-07-20T11:06:24.000</Modified>
+      <Modified>2016-08-20T12:40:58.880</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ph0en1x\Desktop\todolist windows App1\todolist windows App1\bin\x86\Release\ilc\ClrCompression.dll">
+    <AppxPackagedFile Include="P:\ACM\微内核\todolist windows App1\todolist windows App1\bin\x86\Release\ilc\ClrCompression.dll">
       <PackagePath>ClrCompression.dll</PackagePath>
       <Modified>2015-07-22T15:08:02.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ph0en1x\Desktop\todolist windows App1\todolist windows App1\bin\x86\Release\ilc\resources.pri">
+    <AppxPackagedFile Include="P:\ACM\微内核\todolist windows App1\todolist windows App1\bin\x86\Release\ilc\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-05-10T06:55:19.542</Modified>
+      <Modified>2016-09-02T15:49:34.687</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ph0en1x\Desktop\todolist windows App1\todolist windows App1\bin\x86\Release\ilc\todolist windows App1.dll">
+    <AppxPackagedFile Include="P:\ACM\微内核\todolist windows App1\todolist windows App1\bin\x86\Release\ilc\todolist windows App1.dll">
       <PackagePath>todolist windows App1.dll</PackagePath>
-      <Modified>2016-05-13T13:50:52.191</Modified>
+      <Modified>2016-09-02T15:50:40.059</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ph0en1x\Desktop\todolist windows App1\todolist windows App1\bin\x86\Release\ilc\todolist windows App1.exe">
+    <AppxPackagedFile Include="P:\ACM\微内核\todolist windows App1\todolist windows App1\bin\x86\Release\ilc\todolist windows App1.exe">
       <PackagePath>todolist windows App1.exe</PackagePath>
-      <Modified>2016-05-13T13:50:52.551</Modified>
+      <Modified>2016-09-02T15:50:40.389</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ph0en1x\Desktop\todolist windows App1\todolist windows App1\bin\x86\Release\ilc\todolist windows App1.pdb">
+    <AppxPackagedFile Include="P:\ACM\微内核\todolist windows App1\todolist windows App1\bin\x86\Release\ilc\todolist windows App1.pdb">
       <PackagePath>todolist windows App1.pdb</PackagePath>
-      <Modified>2016-05-13T13:50:52.551</Modified>
+      <Modified>2016-09-02T15:50:40.388</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

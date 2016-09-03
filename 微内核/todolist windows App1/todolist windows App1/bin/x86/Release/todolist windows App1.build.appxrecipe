@@ -9,64 +9,64 @@
     <SolutionConfiguration>Release|x86</SolutionConfiguration>
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>5cb4c2ab-1d86-4e32-9eaf-1cba1d382a78</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\Ph0en1x\Desktop\todolist windows App1\todolist windows App1\obj\x86\Release\</IntermediateOutputPath>
+    <IntermediateOutputPath>P:\ACM\微内核\todolist windows App1\todolist windows App1\obj\x86\Release\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Ph0en1x\Desktop\todolist windows App1\todolist windows App1\bin\x86\Release\ilc\AppxManifest.xml">
+    <AppXManifest Include="P:\ACM\微内核\todolist windows App1\todolist windows App1\bin\x86\Release\ilc\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Ph0en1x\Desktop\todolist windows App1\todolist windows App1\bin\x86\Release\ilc\ApplicationInsights.config">
+    <AppxPackagedFile Include="P:\ACM\微内核\todolist windows App1\todolist windows App1\bin\x86\Release\ilc\ApplicationInsights.config">
       <PackagePath>ApplicationInsights.config</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ph0en1x\Desktop\todolist windows App1\todolist windows App1\bin\x86\Release\ilc\Assets\1.jpg">
+    <AppxPackagedFile Include="P:\ACM\微内核\todolist windows App1\todolist windows App1\bin\x86\Release\ilc\Assets\1.jpg">
       <PackagePath>Assets\1.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ph0en1x\Desktop\todolist windows App1\todolist windows App1\bin\x86\Release\ilc\Assets\2.jpg">
+    <AppxPackagedFile Include="P:\ACM\微内核\todolist windows App1\todolist windows App1\bin\x86\Release\ilc\Assets\2.jpg">
       <PackagePath>Assets\2.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ph0en1x\Desktop\todolist windows App1\todolist windows App1\bin\x86\Release\ilc\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="P:\ACM\微内核\todolist windows App1\todolist windows App1\bin\x86\Release\ilc\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ph0en1x\Desktop\todolist windows App1\todolist windows App1\bin\x86\Release\ilc\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="P:\ACM\微内核\todolist windows App1\todolist windows App1\bin\x86\Release\ilc\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ph0en1x\Desktop\todolist windows App1\todolist windows App1\bin\x86\Release\ilc\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="P:\ACM\微内核\todolist windows App1\todolist windows App1\bin\x86\Release\ilc\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ph0en1x\Desktop\todolist windows App1\todolist windows App1\bin\x86\Release\ilc\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="P:\ACM\微内核\todolist windows App1\todolist windows App1\bin\x86\Release\ilc\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ph0en1x\Desktop\todolist windows App1\todolist windows App1\bin\x86\Release\ilc\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="P:\ACM\微内核\todolist windows App1\todolist windows App1\bin\x86\Release\ilc\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ph0en1x\Desktop\todolist windows App1\todolist windows App1\bin\x86\Release\ilc\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="P:\ACM\微内核\todolist windows App1\todolist windows App1\bin\x86\Release\ilc\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ph0en1x\Desktop\todolist windows App1\todolist windows App1\bin\x86\Release\ilc\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="P:\ACM\微内核\todolist windows App1\todolist windows App1\bin\x86\Release\ilc\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ph0en1x\Desktop\todolist windows App1\todolist windows App1\bin\x86\Release\ilc\ClrCompression.dll">
+    <AppxPackagedFile Include="P:\ACM\微内核\todolist windows App1\todolist windows App1\bin\x86\Release\ilc\ClrCompression.dll">
       <PackagePath>ClrCompression.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ph0en1x\Desktop\todolist windows App1\todolist windows App1\bin\x86\Release\ilc\resources.pri">
+    <AppxPackagedFile Include="P:\ACM\微内核\todolist windows App1\todolist windows App1\bin\x86\Release\ilc\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ph0en1x\Desktop\todolist windows App1\todolist windows App1\bin\x86\Release\ilc\todolist windows App1.dll">
+    <AppxPackagedFile Include="P:\ACM\微内核\todolist windows App1\todolist windows App1\bin\x86\Release\ilc\todolist windows App1.dll">
       <PackagePath>todolist windows App1.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ph0en1x\Desktop\todolist windows App1\todolist windows App1\bin\x86\Release\ilc\todolist windows App1.exe">
+    <AppxPackagedFile Include="P:\ACM\微内核\todolist windows App1\todolist windows App1\bin\x86\Release\ilc\todolist windows App1.exe">
       <PackagePath>todolist windows App1.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ph0en1x\Desktop\todolist windows App1\todolist windows App1\bin\x86\Release\ilc\todolist windows App1.pdb">
+    <AppxPackagedFile Include="P:\ACM\微内核\todolist windows App1\todolist windows App1\bin\x86\Release\ilc\todolist windows App1.pdb">
       <PackagePath>todolist windows App1.pdb</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
