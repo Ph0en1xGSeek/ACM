@@ -1,0 +1,7 @@
+Hallo,diesisteineziemlichlangeZeile,dieinHtmlabernichtumgebrochenwird.
+Zwei
+
+produzierenzweiNewlines.Esgibtauchnochdastag--------------------------------------------------------------------------------
+waseinenTrennerdarstellt.Zwei--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+produzierenzweiHorizontalRulers.AchtungmehrereLeerzeichenirritierenHtmlgenausowenigwie

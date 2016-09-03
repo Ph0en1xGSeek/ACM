@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1472897309 source:c:\users\ljc\desktop\rotten ropes\main.cpp
+	<iostream>
+	<stdio.h>
+	<algorithm>
+	<string.h>
+
