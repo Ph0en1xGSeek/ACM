@@ -19,14 +19,14 @@ int main()
                 scanf("%d", &tmp);
                 arr[i][j] += arr[i][j-1] + tmp;///第i行前j个数的和
             }
-        int mx = -12800;
+        int mx = -12800;///开始应该设置为负无穷
         for(int i = 1; i <= n; i++)
             for(int j = i; j <= n; j++)
             {
                 int sum = 0;
                 for(int k = 1; k <= n; k++)
                 {
-                    if(sum < 0) sum = 0;
+                    if(sum < 0) sum = 0;///应该先录入第一个，防止全是负数时输出为0的错误
                     sum += arr[k][j] - arr[k][i-1];///把i~j的和压缩成一维，类似一维字段和做i*j次
                     if(sum > mx) mx = sum;
                 }
