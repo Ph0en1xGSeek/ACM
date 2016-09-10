@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1473474968 source:c:\users\ljc\desktop\break the chocolate\main.cpp
+	<iostream>
+	<stdio.h>
+	<algorithm>
+	<string.h>
+	<math.h>
+
