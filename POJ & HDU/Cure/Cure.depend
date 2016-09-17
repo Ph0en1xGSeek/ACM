@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1474093490 source:c:\users\ljc\desktop\cure\main.cpp
+	<iostream>
+	<stdio.h>
+	<algorithm>
+	<string.h>
+	<math.h>
+
