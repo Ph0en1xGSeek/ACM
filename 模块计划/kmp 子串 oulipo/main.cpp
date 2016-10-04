@@ -42,7 +42,7 @@ int kmp()
             j = nex[j];
         }
     }
-    return ans;f
+    return ans;
 }
 
 int main()
