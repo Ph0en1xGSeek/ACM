@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1498390455 source:d:\acm\cow marathon\main.cpp
+	<iostream>
+	<stdio.h>
+	<algorithm>
+	<string.h>
+	<vector>
+	<queue>
+
