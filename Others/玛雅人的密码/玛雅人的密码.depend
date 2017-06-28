@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1498659175 source:d:\acm\ÂêÑÅÈËµÄÃÜÂë\main.cpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+	<algorithm>
+	<map>
+	<queue>
+
