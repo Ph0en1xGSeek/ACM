@@ -31,7 +31,7 @@ int main()
         {
             if(i < bonder)
             {
-                p[i] = min(p[2*id - i], bonder - i);//相对id对称的位置 2id - 1
+                p[i] = min(p[2*id - i], bonder - i);//相对id对称的位置 id-(i-id)
             }
             else
             {

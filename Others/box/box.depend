@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1500102843 source:d:\acm\box\main.cpp
+	<iostream>
+	<stdio.h>
+	<algorithm>
+	<string.h>
+	<math.h>
+	<string>
+
