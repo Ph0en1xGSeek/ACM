@@ -1,0 +1,3 @@
+/home/phoenix/Next/Jump and Jump/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/phoenix/Next/Jump and Jump/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/phoenix/Next/Jump and Jump/cmake-build-debug/CMakeFiles/Jump_and_Jump.dir

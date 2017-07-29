@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/Five_In_a_Row.dir/main.cpp.o  -o Five_In_a_Row 

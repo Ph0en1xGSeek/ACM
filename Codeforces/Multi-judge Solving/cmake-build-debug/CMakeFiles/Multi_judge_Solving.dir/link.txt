@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/Multi_judge_Solving.dir/main.cpp.o  -o Multi_judge_Solving 

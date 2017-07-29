@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/phoenix/Next/Jury Marks/main.cpp
+iostream
+-
+stdio.h
+-
+algorithm
+-
+string.h
+-
+map
+-
+

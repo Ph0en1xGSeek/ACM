@@ -1,0 +1,3 @@
+/home/phoenix/Next/Binary Protocol/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/phoenix/Next/Binary Protocol/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/phoenix/Next/Binary Protocol/cmake-build-debug/CMakeFiles/Binary_Protocol.dir

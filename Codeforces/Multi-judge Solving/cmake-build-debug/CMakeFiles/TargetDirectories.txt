@@ -1,0 +1,3 @@
+/home/phoenix/Next/Multi-judge Solving/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/phoenix/Next/Multi-judge Solving/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/phoenix/Next/Multi-judge Solving/cmake-build-debug/CMakeFiles/Multi_judge_Solving.dir

@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/Suitable_Replacement_.dir/main.cpp.o  -o Suitable_Replacement_ 

@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/Keyboard_Layouts.dir/main.cpp.o  -o Keyboard_Layouts 

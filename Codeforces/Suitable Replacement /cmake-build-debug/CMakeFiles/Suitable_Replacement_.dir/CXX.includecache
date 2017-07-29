@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/phoenix/Next/Suitable Replacement /main.cpp
+iostream
+-
+stdio.h
+-
+string.h
+-
+algorithm
+-
+
