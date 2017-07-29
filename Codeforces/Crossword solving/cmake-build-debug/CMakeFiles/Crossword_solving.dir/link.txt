@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/Crossword_solving.dir/main.cpp.o  -o Crossword_solving 

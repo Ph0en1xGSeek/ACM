@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/phoenix/Next/String Reconstruction/main.cpp
+iostream
+-
+stdio.h
+-
+string.h
+-
+algorithm
+-
+

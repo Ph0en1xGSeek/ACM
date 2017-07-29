@@ -1,0 +1,3 @@
+/home/phoenix/Next/I'm bored with life/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/phoenix/Next/I'm bored with life/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/phoenix/Next/I'm bored with life/cmake-build-debug/CMakeFiles/I_m_bored_with_life.dir

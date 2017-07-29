@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/phoenix/Next/Crossword solving/main.cpp
+iostream
+-
+stdio.h
+-
+algorithm
+-
+string.h
+-
+

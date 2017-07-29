@@ -1,0 +1,3 @@
+/home/phoenix/Next/Hacker, pack your bags!/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/phoenix/Next/Hacker, pack your bags!/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/phoenix/Next/Hacker, pack your bags!/cmake-build-debug/CMakeFiles/Hacker__pack_your_bags_.dir
