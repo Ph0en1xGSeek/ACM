@@ -1,0 +1,3 @@
+/home/phoenix/Next/Diplomas and Certificates/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/phoenix/Next/Diplomas and Certificates/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/phoenix/Next/Diplomas and Certificates/cmake-build-debug/CMakeFiles/Diplomas_and_Certificates.dir

@@ -1,0 +1,3 @@
+/home/phoenix/Next/Permutation Game/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/phoenix/Next/Permutation Game/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/phoenix/Next/Permutation Game/cmake-build-debug/CMakeFiles/Permutation_Game.dir

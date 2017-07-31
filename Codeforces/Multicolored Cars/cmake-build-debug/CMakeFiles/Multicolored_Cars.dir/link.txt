@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/Multicolored_Cars.dir/main.cpp.o  -o Multicolored_Cars 
