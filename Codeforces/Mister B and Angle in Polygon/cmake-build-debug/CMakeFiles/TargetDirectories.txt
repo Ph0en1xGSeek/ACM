@@ -1,0 +1,3 @@
+/home/phoenix/Next/Mister B and Angle in Polygon/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/phoenix/Next/Mister B and Angle in Polygon/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/phoenix/Next/Mister B and Angle in Polygon/cmake-build-debug/CMakeFiles/Mister_B_and_Angle_in_Polygon.dir
