@@ -1,0 +1,3 @@
+/home/phoenix/Next/Karen and Coffee/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/phoenix/Next/Karen and Coffee/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/phoenix/Next/Karen and Coffee/cmake-build-debug/CMakeFiles/Karen_and_Coffee.dir
