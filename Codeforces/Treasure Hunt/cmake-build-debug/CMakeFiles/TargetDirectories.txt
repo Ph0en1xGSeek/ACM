@@ -1,0 +1,3 @@
+/home/phoenix/Next/Treasure Hunt/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/phoenix/Next/Treasure Hunt/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/phoenix/Next/Treasure Hunt/cmake-build-debug/CMakeFiles/Treasure_Hunt.dir

@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/Treasure_Hunt.dir/main.cpp.o  -o Treasure_Hunt 

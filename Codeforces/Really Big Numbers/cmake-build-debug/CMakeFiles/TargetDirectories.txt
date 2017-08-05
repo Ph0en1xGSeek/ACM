@@ -1,0 +1,3 @@
+/home/phoenix/Next/Really Big Numbers/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/phoenix/Next/Really Big Numbers/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/phoenix/Next/Really Big Numbers/cmake-build-debug/CMakeFiles/Really_Big_Numbers.dir
