@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1503150505 source:d:\acm\hdu 5226\main.cpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+	<algorithm>
+
