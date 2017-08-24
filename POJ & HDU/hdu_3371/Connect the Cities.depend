@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1498966971 source:d:\acm\connect the cities\main.cpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+	<algorithm>
+	<queue>
+
