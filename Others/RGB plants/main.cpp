@@ -42,13 +42,9 @@ int main()
             if(n&1)
             {
                 mul(res, tmp);
-                n--;
             }
-            else
-            {
-                mul(tmp, tmp);
-                n >>= 1;
-            }
+			mul(tmp, tmp);
+			n >>= 1;
         }
         for(int i = 1; i<= 3; i++)
             for(int j = 1; j <= 3; j++)
