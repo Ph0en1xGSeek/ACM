@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1504101245 source:d:\acm\arya and bran\main.cpp
+	<iostream>
+	<algorithm>
+	<stdio.h>
+	<string.h>
+
