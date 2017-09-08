@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1504847463 source:d:\acm\最小花费\main.cpp
+	<iostream>
+	<stdio.h>
+	<algorithm>
+	<string.h>
+
