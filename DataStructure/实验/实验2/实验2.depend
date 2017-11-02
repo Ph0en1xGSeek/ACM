@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1452081893 source:c:\users\ph0en1x\desktop\实验2\main.cpp
+	<stdio.h>
+	<string.h>
+
+1452735305 source:d:\acm\acm\datastructure\实验\实验2\main.cpp
+	<stdio.h>
+	<string.h>
+	<fstream>
+
