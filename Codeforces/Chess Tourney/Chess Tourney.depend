@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1505804174 source:d:\acm\chess tourney\main.cpp
+	<iostream>
+	<stdio.h>
+	<algorithm>
+	<string.h>
+
