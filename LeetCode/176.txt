@@ -1,0 +1,6 @@
+# Write your MySQL query statement below
+# select Salary as SecondHighestSalary from Employee
+# limit 1,1
+select max(Salary) as SecondHighestSalary from Employee
+where Salary < (select max(Salary) from Employee)
+# max can return null while limit not
