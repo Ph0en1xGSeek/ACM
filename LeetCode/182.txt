@@ -1,0 +1,3 @@
+# Write your MySQL query statement below
+select distinct Email from Person p1
+where exists(select Email from Person p2 where p2.Id <> p1.Id and p2.Email = p1.Email)
