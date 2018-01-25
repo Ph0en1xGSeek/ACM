@@ -3,7 +3,7 @@ public:
     bool isMatch(string s, string p) {
         int lens = s.length();
         int lenp = p.length();
-        
+        //s[i]之前（不算i）与p[j]之前的字符串是否能够匹配
         bool **dp = new bool *[lens+1];
         for(int i = 0; i <= lens; i++)
             dp[i] = new bool [lenp+1];
