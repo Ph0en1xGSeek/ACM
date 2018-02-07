@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1516938089 source:d:\acm\permute digits\main.cpp
+	<iostream>
+	<stdio.h>
+	<algorithm>
+	<string.h>
+	<iomanip>
+
