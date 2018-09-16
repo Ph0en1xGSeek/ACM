@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1537102986 source:c:\users\ph0en1x\desktop\poj_1328\main.cpp
+	<iostream>
+	<stdio.h>
+	<algorithm>
+	<string.h>
+	<math.h>
+
