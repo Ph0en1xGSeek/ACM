@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1471943028 source:/home/ph0en1x/桌面/郑厂长系列故事——排兵布阵/main.cpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+	<algorithm>
+

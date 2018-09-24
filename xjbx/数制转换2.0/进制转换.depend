@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1416144249 source:c:\users\phoenix geek\desktop\进制转换\main.cpp
+	<iostream>
+	<string>
+
+1416230660 source:c:\users\phoenix geek\desktop\进制转换2.0\main.cpp
+	<iostream>
+	<string>
+	<cmath>
+	<cstdlib>
+
+1416410881 source:c:\users\phoenix geek\desktop\试验地\数制转换2.0\main.cpp
+	<iostream>
+	<string>
+	<cmath>
+	<cstdlib>
+
+1416411391 source:c:\users\phoenix geek\desktop\战略布局蓝图v2.1\数制转换2.0\main.cpp
+	<iostream>
+	<string>
+	<cmath>
+	<cstdlib>
+

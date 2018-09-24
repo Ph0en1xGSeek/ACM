@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1471241082 source:c:\users\ljc\desktop\special tetrahedron\main.cpp
+	<iostream>
+	<stdio.h>
+	<algorithm>
+	<string.h>
+
