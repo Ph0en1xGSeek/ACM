@@ -1,4 +1,5 @@
 #include <iostream>
+#include <stdio.h>
 #include <map>
 #include <cstring>
 #include <string>
@@ -41,21 +42,18 @@ int main()
             for(int i = 0; i < num; i++)
                 for(int j = 0; j < num; j++)
                     arr[i][j] = max(arr[i][j], arr[i][k]*arr[k][j]);
+        bool flag = false;
         for(int i = 0; i < num; i++)
         {
             if(arr[i][i] > 1)
             {
                 cout << "Case " << ca++ << ": Yes" <<endl;
+                flag = true;
                 break;
             }
-
-            else
-            {
-                cout << "Case " << ca++ << ": No" << endl;
-                break;
-            }
-
         }
+        if(!flag)
+            printf("Case %d: No\n", ca++);
     }
     return 0;
 }
