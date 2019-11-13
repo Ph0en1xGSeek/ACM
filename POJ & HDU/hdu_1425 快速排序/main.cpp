@@ -18,10 +18,10 @@ void quickSort(int low, int high)
     int l = low, h = high;
     while(l < h)
     {
-        while(l < h && arr[h] > tmp)
+        while(l < h && arr[h] >= tmp)
             h--;
         arr[l] = arr[h];
-        while(l < h && tmp > arr[l])
+        while(l < h && tmp >= arr[l])
             l++;
         arr[h] = arr[l];
     }
