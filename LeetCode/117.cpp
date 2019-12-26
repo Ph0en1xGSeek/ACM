@@ -25,8 +25,8 @@ public:
         }
         Node * cur = root;
         while(cur != NULL){
-            Node *nex = NULL;
-            Node *pre = NULL;
+            Node *nex = NULL; //node that found first next layer
+            Node *pre = NULL; // last found node next layer
             Node *tmp = cur;
             while(tmp != NULL){
                 if(tmp->left != NULL){

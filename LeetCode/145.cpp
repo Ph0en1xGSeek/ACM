@@ -7,6 +7,7 @@
  *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
  * };
  */
+//recursion O(N), O(N)
 class Solution {
 public:
     
@@ -30,5 +31,63 @@ public:
     }
 };
 
+// stack O(N), O(N)
+// postorder(left-right-root) = reverse(preorder(root-right-left))
+class Solution {
+public:
+    vector<int> postorderTraversal(TreeNode* root) {
+        vector<int> ret;
+        TreeNode *cur = root;
+        if(cur == nullptr) {
+            return ret;
+        }
+        stack<TreeNode*> s;
+        while(cur || !s.empty()) {
+            if(cur) {
+                s.push(cur);
+                ret.push_back(cur->val);
+                cur = cur->right;
+            }else {
+                cur = s.top();
+                s.pop();
+                cur = cur->left;
+            }
+        }
+        reverse(ret.begin(), ret.end());
+        return ret;
+    }
+};
 
-
+// thread O(N), O(1)
+// postorder(left-right-root) = reverse(preorder(root-right-left))
+class Solution {
+public:
+    vector<int> postorderTraversal(TreeNode* root) {
+        vector<int> ret;
+        TreeNode *cur = root, *pre;
+        if(cur == nullptr) {
+            return ret;
+        }
+        while(cur) {
+            if(cur->right != nullptr) {
+                pre = cur->right;
+                while(pre->left != nullptr && pre->left != cur) {
+                    pre = pre->left;
+                }
+                if(pre->left == nullptr) {
+                    pre->left = cur;
+                    ret.push_back(cur->val);
+                    cur = cur->right;
+                }else {
+                    pre->left = nullptr;
+                    cur = cur->left;
+                }
+            }else {
+                ret.push_back(cur->val);
+                cur = cur->left;
+            }
+        }
+        reverse(ret.begin(), ret.end());
+        return ret;
+    }
+};
