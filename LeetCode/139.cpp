@@ -1,3 +1,4 @@
+//DP
 class Solution {
 public:
     bool wordBreak(string s, vector<string>& wordDict) {
@@ -15,4 +16,34 @@ public:
         }
         return dp[len];
     }
+};
+
+// memmorized search
+class Solution {
+public:
+    bool wordBreak(string s, vector<string>& wordDict) {
+        unordered_set<string> dict(wordDict.begin(), wordDict.end());
+        sz = s.size();
+        bool res = dfs(s, dict, 0);
+        return res;
+    }
+    
+    bool dfs(string &s, unordered_set<string> &dict, int start) {
+        if(mem.find(start) != mem.end()) {
+            return false;
+        }
+        if(start == sz) {
+            return true;
+        }
+        for(int i = start+1; i <= sz; ++i) {
+            if(dict.find(s.substr(start, i - start)) != dict.end() && dfs(s, dict, i)) {
+                return true;
+            }
+        }
+        mem.insert(start);
+        return false;
+    }
+private:
+    int sz;
+    unordered_set<int> mem;
 };
