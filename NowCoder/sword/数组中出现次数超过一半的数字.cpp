@@ -90,7 +90,7 @@ public:
         }
         int times = 1;
         int nums = numbers[0];
-        for(int i = 0; i < sz; ++i) {
+        for(int i = 1; i < sz; ++i) {
             if(times == 0) {
                 nums = numbers[i];
                 ++times;
