@@ -1,26 +1,30 @@
 class Solution {
 public:
-    vector<vector<int>> subsetsWithDup(vector<int>& nums) {
-        vector<vector<int>> result;
-        vector<int> tmp;
-        if(nums.size() == 0){
-            return result;
-        }
-        sort(nums.begin(), nums.end());
-        int pre_size = 1;
-        int last = nums[0];
-        result.push_back(tmp);
-        for(int i = 0; i < nums.size(); i++){
-            if(last != nums[i]){
-                last = nums[i];
-                pre_size = result.size();
-            }
-            int cur_size = result.size();
-            for(int j = cur_size - pre_size; j < cur_size; j++){
-                result.push_back(result[j]);
-                result[result.size()-1].push_back(nums[i]);
-            }
-        }
-        return result;
-    }
+	vector<vector<int>> subsetsWithDup(vector<int> &nums) {
+		int sz = nums.size();
+		vector<vector<int>> ans;
+		ans.push_back(vector<int>());
+		if(sz == 0) {
+			return ans;
+		}
+		int pre_pos = 0;
+		sort(nums.begin(), nums.end());
+		for(int i = 0; i < sz; ++i) {
+            int ans_sz = ans.size();
+			if(i == 0 || nums[i] != nums[i-1]) {
+                pre_pos = ans_sz - 1;
+				for(int j = 0; j <= pre_pos; ++j) {
+					ans.push_back(ans[j]);
+					ans.back().push_back(nums[i]);
+				}
+			}else {
+				for(int j = pre_pos+1; j < ans_sz; ++j) {
+					ans.push_back(ans[j]);
+					ans.back().push_back(nums[i]);
+				}
+                pre_pos = ans_sz - 1;
+			}
+		}
+		return ans;
+	}
 };
