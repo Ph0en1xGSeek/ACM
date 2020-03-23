@@ -20,6 +20,10 @@ public:
             while(str[i + dp[i]] == str[i - dp[i]]) {
                 ++dp[i];
             }
+            if(i + dp[i] > border) {
+                border = i + dp[i];
+                id = i;
+            }
             ans += (dp[i] >> 1);
         }
         return ans;
