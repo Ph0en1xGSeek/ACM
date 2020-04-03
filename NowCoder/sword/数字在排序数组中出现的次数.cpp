@@ -25,3 +25,13 @@ public:
         return right - left;
     }
 };
+
+
+class Solution {
+public:
+    int GetNumberOfK(vector<int> data ,int k) {
+        auto iter_left = lower_bound(data.begin(), data.end(), k);
+        auto iter_right = upper_bound(data.begin(), data.end(), k);
+        return iter_right - iter_left;
+    }
+};

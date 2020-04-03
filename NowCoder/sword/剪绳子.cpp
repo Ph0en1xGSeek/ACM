@@ -25,3 +25,24 @@ public:
         return dp[number];
     }
 };
+
+
+class Solution {
+public:
+    int cutRope(int number) {
+        if(number == 2) {
+            return 1;
+        }else if(number == 3) {
+            return 2;
+        }
+        int div = number / 3;
+        int rem = number % 3;
+        if(rem == 0) {
+            return pow(3, div);
+        }else if(rem == 1) {
+            return pow(3, div-1) * 4;
+        }else {
+            return pow(3, div) * 2;
+        }
+    }
+};

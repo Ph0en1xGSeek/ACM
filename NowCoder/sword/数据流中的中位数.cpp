@@ -107,3 +107,47 @@ private:
         }
     }
 };
+
+
+
+class Solution {
+public:
+    void Insert(int num)
+    {
+        if(!mx.empty() && num >= mx.top()) {
+            mx.push(num);
+        }else if(!mi.empty() && num <= mi.top()){
+            mi.push(num);
+        }else {
+			mi.push(num);
+		}
+        if(mx.size() > mi.size() + 1) {
+            int tmp = mx.top();
+            mx.pop();
+            mi.push(tmp);
+        }else if(mi.size() > mx.size() + 1) {
+            int tmp = mi.top();
+            mi.pop();
+            mx.push(tmp);
+        }
+    }
+
+    double GetMedian()
+    { 
+        if(mx.size() > mi.size()) {
+            return mx.top();
+        }else if(mi.size() > mx.size()) {
+            return mi.top();
+        }else {
+            if(mx.empty()) {
+                return 0;
+            }else {
+                return ((double)mx.top() + (double)mi.top()) / 2.0;
+            }
+        }
+    }
+private:
+    priority_queue<int, vector<int>, less<int>> mi;
+    priority_queue<int, vector<int>, greater<int>> mx;
+    
+};
