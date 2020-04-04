@@ -45,3 +45,32 @@ int main() {
     }
     return 0;
 }
+
+
+#include <iostream>
+#include <stdio.h>
+#include <vector>
+#include <iomanip>
+#include <stdio.h>
+
+using namespace std;
+
+int main() {
+    int num, q, tmp;
+    cin >> num;
+    vector<int> cnt(151, 0);
+    vector<int> arr(num, 0);
+    for(int i = 0; i < num; ++i) {
+        cin >> arr[i];
+        ++cnt[arr[i]];
+    }
+    for(int i = 1; i <= 150; ++i) {
+        cnt[i] += cnt[i-1];
+    }
+    cin >> q;
+    for(int i = 0; i < q; ++i) {
+        cin >> tmp;
+        printf("%.6lf\n", ((double)cnt[arr[tmp-1]] - 1.0) / num * 100);
+    }
+    return 0;
+}
