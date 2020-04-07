@@ -1,58 +1,51 @@
 #include <iostream>
+#include <algorithm>
 #include <vector>
-#include <unordered_set>
- 
+
 using namespace std;
- 
-string rev(string s) {
-    bool flag = false;
-    int size = s.size();
-    string ret;
-    for(int i = 0; i < size; ++i) {
-        if(flag == false) {
-            if(s[i] == '0') {
-                flag = true;
-            }else {
-                continue;
-            }
-        }
-        if(s[i] == '1') {
-            ret += '0';
+
+long long merge(vector<pair<int, int>> &arr, int from, int to) {
+    if(from >= to) {
+        return 0;
+    }
+    int mid = from + ((to - from) >> 1);
+    long long lsum = merge(arr, from, mid);
+    long long rsum = merge(arr, mid+1, to);
+    vector<pair<int, int>> tmp(to - from + 1);
+    int pos1 = from, pos2 = mid + 1, pos = 0;
+    long long sum = 0;
+    for(int i = from; i <= mid; ++i) {
+        sum += arr[i].second;
+    }
+    long long ret = 0;
+    while(pos1 <= mid && pos2 <= to) {
+        if(arr[pos1].first <= arr[pos2].first) {
+            sum -= arr[pos1].second;
+            tmp[pos++] = arr[pos1++];
         }else {
-            ret += '1';
+            ret += (long long)(mid - pos1 + 1) * arr[pos2].second - sum;
+            tmp[pos++] = arr[pos2++];
         }
     }
-    return ret;
-}
+    while(pos1 <= mid) {
+        tmp[pos++] = arr[pos1++];
+    }
+    while(pos2 <= to) {
+        tmp[pos++] = arr[pos2++];
+    }
+    copy(tmp.begin(), tmp.end(), arr.begin() + from);
+    return lsum + rsum + ret;
+} 
 
 int main() {
-    int ca;
-    string s, t;
-    cin >> ca;
-    while(ca--) {
-        cin >> s >> t;
-        int tsize = t.size();
-        unordered_set<string> st;
-        st.insert("0");
-        while(s != "") {
-            st.insert(s);
-            s = rev(s);
-        }
-        vector<bool> dp(tsize+1, false);
-        dp[0] = true;
-        for(int i = 1; i <= tsize; ++i) {
-            for(int j = 0; j < i; ++j) {
-                if(dp[j] && st.find(t.substr(j, i-j)) != st.end()) {
-                    dp[i] = true;
-                    break;
-                }
-            }
-        }
-        if(dp[tsize]) {
-            cout << "YES" << endl;
-        }else {
-            cout << "NO" << endl;
-        }
+    int n;
+    cin >> n;
+    vector<pair<int, int>> arr(n);
+    for(int i = 0; i < n; ++i) {
+        cin >> arr[i].first;
+        arr[i].second = i;
     }
+    long long ans = merge(arr, 0, n-1);
+    cout << ans << endl;
     return 0;
 }
