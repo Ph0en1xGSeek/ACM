@@ -32,7 +32,7 @@ public:
             freq[cur_freq].erase(iter[key]);
             freq[cur_freq + 1].push_back(key);
             iter[key] = --freq[cur_freq + 1].end();
-            if(freq[cur_freq].size() == 0) {
+            if(freq[minFreq].size() == 0) {
                 ++minFreq;
             }
         }else {

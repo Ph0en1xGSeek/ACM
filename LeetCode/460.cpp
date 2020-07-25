@@ -13,7 +13,7 @@ public:
         ++mp[key].second;
         freq[mp[key].second].push_back(key);
         iter[key] = --freq[mp[key].second].end();
-        if(freq[minFreq].size() == 0) {
+        while(freq[minFreq].size() == 0) {
             ++minFreq;
         }
         return mp[key].first;
