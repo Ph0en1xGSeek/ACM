@@ -30,3 +30,47 @@ class Solution(object):
                         r -= 1
                     
         return ans
+
+
+class Solution {
+public:
+	vector<vector<int>> threeSum(vector<int> &nums) {
+		int size = nums.size();
+		vector<vector<int>> ans;
+		if(size < 3) {
+			return ans;
+		}
+		sort(nums.begin(), nums.end());
+		for(int i = 0; i < size - 2; ++i) {
+            if(i != 0 && nums[i-1] == nums[i]) {
+                continue;
+            }
+			int l = i + 1;
+			int r = size - 1;
+			while(l < r) {
+				if(nums[l] + nums[r] < -nums[i]) {
+					++l;
+					while(l < r && nums[l] == nums[l - 1]) {
+						++l;
+					}
+				}else if(nums[l] + nums[r] > -nums[i]) {
+					--r;
+					while(l < r && nums[r] == nums[r + 1]) {
+						--r;
+					}
+				}else {
+					ans.push_back({nums[i], nums[l], nums[r]});
+					++l;
+					--r;
+					while(l < r && nums[l] == nums[l-1]) {
+						++l;
+					}
+					while(l < r && nums[r] == nums[r + 1]) {
+						--r;
+					}
+				}
+			}
+		}
+		return ans;
+	}
+};
