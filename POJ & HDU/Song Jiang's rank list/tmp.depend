@@ -1,9 +1,0 @@
-# depslib dependency file v1.0
-1472028374 source:/home/ph0en1x/桌面/Song Jiang's rank list/main.cpp
-	<iostream>
-	<stdio.h>
-	<algorithm>
-	<string.h>
-	<string>
-	<map>
-

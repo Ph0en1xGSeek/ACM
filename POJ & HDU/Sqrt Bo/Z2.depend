@@ -1,8 +1,0 @@
-# depslib dependency file v1.0
-1469535426 source:c:\users\ljc\desktop\z2\main.cpp
-	<iostream>
-	<stdio.h>
-	<string.h>
-	<algorithm>
-	<math.h>
-

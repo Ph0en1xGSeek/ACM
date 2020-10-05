@@ -1,7 +1,0 @@
-# depslib dependency file v1.0
-1472358861 source:c:\users\ljc\desktop\zyb's premutation\main.cpp
-	<iostream>
-	<stdio.h>
-	<algorithm>
-	<string.h>
-

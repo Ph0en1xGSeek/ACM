@@ -1,8 +1,0 @@
-# depslib dependency file v1.0
-1438070099 source:c:\users\phoenix geek\desktop\arctic network\main.cpp
-	<iostream>
-	<cmath>
-	<cstring>
-	<algorithm>
-	<iomanip>
-

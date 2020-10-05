@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/Mister_B_and_Angle_in_Polygon.dir/main.cpp.o  -o Mister_B_and_Angle_in_Polygon 

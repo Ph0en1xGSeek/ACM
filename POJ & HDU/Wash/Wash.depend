@@ -1,8 +1,0 @@
-# depslib dependency file v1.0
-1498137008 source:d:\acm\wash\main.cpp
-	<iostream>
-	<algorithm>
-	<stdio.h>
-	<string.h>
-	<queue>
-

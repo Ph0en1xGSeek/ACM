@@ -1,8 +1,0 @@
-# depslib dependency file v1.0
-1502182675 source:d:\acm\the golden age\main.cpp
-	<iostream>
-	<stdio.h>
-	<algorithm>
-	<string.h>
-	<vector>
-

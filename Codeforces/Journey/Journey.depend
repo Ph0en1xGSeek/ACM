@@ -1,8 +1,0 @@
-# depslib dependency file v1.0
-1504105363 source:d:\acm\journey\main.cpp
-	<iostream>
-	<stdio.h>
-	<algorithm>
-	<string.h>
-	<vector>
-

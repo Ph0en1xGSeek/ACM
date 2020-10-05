@@ -1,8 +1,0 @@
-# depslib dependency file v1.0
-1504684257 source:d:\acm\sharing\main.cpp
-	<iostream>
-	<stdio.h>
-	<algorithm>
-	<string.h>
-	<map>
-

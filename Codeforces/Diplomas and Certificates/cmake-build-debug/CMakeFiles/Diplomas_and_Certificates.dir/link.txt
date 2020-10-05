@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/Diplomas_and_Certificates.dir/main.cpp.o  -o Diplomas_and_Certificates 

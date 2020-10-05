@@ -1,7 +1,0 @@
-# depslib dependency file v1.0
-1503367475 source:d:\acm\the number on the board\main.cpp
-	<iostream>
-	<algorithm>
-	<string.h>
-	<stdio.h>
-

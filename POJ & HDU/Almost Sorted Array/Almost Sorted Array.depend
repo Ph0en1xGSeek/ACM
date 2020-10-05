@@ -1,7 +1,0 @@
-# depslib dependency file v1.0
-1470809012 source:c:\users\ljc\desktop\almost sorted array\main.cpp
-	<iostream>
-	<cstdio>
-	<cstring>
-	<vector>
-

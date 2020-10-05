@@ -1,7 +1,0 @@
-# depslib dependency file v1.0
-1469151474 source:c:\users\ljc\desktop\la vie en rose\main.cpp
-	<iostream>
-	<stdio.h>
-	<string.h>
-	<algorithm>
-

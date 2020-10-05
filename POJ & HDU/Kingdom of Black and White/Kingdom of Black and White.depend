@@ -1,7 +1,0 @@
-# depslib dependency file v1.0
-1470966286 source:c:\users\ljc\desktop\kingdom of black and white\main.cpp
-	<iostream>
-	<stdio.h>
-	<string.h>
-	<algorithm>
-

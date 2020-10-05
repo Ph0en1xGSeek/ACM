@@ -1,3 +1,0 @@
-/home/phoenix/Next/String Reconstruction/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/phoenix/Next/String Reconstruction/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/phoenix/Next/String Reconstruction/cmake-build-debug/CMakeFiles/String_Reconstruction.dir

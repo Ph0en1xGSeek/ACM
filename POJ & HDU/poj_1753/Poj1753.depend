@@ -1,7 +1,0 @@
-# depslib dependency file v1.0
-1537084713 source:d:\next\poj1753\main.cpp
-	<iostream>
-	<stdio.h>
-	<algorithm>
-	<string.h>
-

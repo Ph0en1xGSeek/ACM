@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/Permutation_Game.dir/main.cpp.o  -o Permutation_Game 

@@ -1,8 +1,0 @@
-# depslib dependency file v1.0
-1498877936 source:d:\acm\二次方程计算器\main.cpp
-	<iostream>
-	<stdio.h>
-	<algorithm>
-	<string.h>
-	<math.h>
-

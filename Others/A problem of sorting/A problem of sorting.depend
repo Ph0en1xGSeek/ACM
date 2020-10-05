@@ -1,7 +1,0 @@
-# depslib dependency file v1.0
-1499612986 source:d:\acm\a problem of sorting\main.cpp
-	<iostream>
-	<stdio.h>
-	<algorithm>
-	<string.h>
-

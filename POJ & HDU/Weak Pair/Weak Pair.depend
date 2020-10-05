@@ -1,8 +1,0 @@
-# depslib dependency file v1.0
-1474009549 source:/home/ph0en1x/桌面/Weak Pair/main.cpp
-	<iostream>
-	<stdio.h>
-	<algorithm>
-	<string.h>
-	<vector>
-

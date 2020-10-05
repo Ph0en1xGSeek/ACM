@@ -1,7 +1,0 @@
-# depslib dependency file v1.0
-1472296473 source:c:\users\ljc\desktop\comparison of android versions\main.cpp
-	<iostream>
-	<stdio.h>
-	<algorithm>
-	<string.h>
-

@@ -1,7 +1,0 @@
-# depslib dependency file v1.0
-1470219495 source:c:\users\ljc\desktop\find a multiple\main.cpp
-	<iostream>
-	<stdio.h>
-	<algorithm>
-	<string.h>
-

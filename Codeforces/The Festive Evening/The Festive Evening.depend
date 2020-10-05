@@ -1,7 +1,0 @@
-# depslib dependency file v1.0
-1503305218 source:d:\acm\the festive evening\main.cpp
-	<iostream>
-	<stdio.h>
-	<algorithm>
-	<string.h>
-

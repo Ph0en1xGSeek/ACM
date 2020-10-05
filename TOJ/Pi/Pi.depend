@@ -1,7 +1,0 @@
-# depslib dependency file v1.0
-1455000982 source:c:\users\ph0en1x\desktop\pi\main.cpp
-	<iostream>
-	<stdio.h>
-	<string.h>
-	<math.h>
-

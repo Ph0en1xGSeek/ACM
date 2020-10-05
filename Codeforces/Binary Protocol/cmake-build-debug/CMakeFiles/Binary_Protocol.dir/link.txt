@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/Binary_Protocol.dir/main.cpp.o  -o Binary_Protocol 

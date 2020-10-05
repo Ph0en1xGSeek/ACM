@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/Unimodal_Array.dir/main.cpp.o  -o Unimodal_Array 

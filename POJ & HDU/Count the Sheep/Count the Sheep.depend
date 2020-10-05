@@ -1,8 +1,0 @@
-# depslib dependency file v1.0
-1498315301 source:d:\acm\count the sheep\main.cpp
-	<iostream>
-	<stdio.h>
-	<algorithm>
-	<string.h>
-	<vector>
-

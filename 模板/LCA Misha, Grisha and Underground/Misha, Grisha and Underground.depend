@@ -1,7 +1,0 @@
-# depslib dependency file v1.0
-1502678154 source:d:\acm\misha, grisha and underground\main.cpp
-	<iostream>
-	<stdio.h>
-	<algorithm>
-	<string.h>
-

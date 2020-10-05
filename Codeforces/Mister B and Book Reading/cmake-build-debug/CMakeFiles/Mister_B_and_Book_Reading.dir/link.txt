@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/Mister_B_and_Book_Reading.dir/main.cpp.o  -o Mister_B_and_Book_Reading 

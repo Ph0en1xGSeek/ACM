@@ -1,7 +1,0 @@
-# depslib dependency file v1.0
-1471015603 source:/home/ph0en1x/qiku/Pagodas/main.cpp
-	<iostream>
-	<stdio.h>
-	<algorithm>
-	<string.h>
-

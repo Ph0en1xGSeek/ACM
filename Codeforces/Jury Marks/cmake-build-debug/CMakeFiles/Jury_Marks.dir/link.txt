@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/Jury_Marks.dir/main.cpp.o  -o Jury_Marks 

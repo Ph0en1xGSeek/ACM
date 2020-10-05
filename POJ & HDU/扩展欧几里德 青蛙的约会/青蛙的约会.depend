@@ -1,7 +1,0 @@
-# depslib dependency file v1.0
-1468735793 source:c:\users\tjuacm_lyj\desktop\青蛙的约会\main.cpp
-	<iostream>
-	<stdio.h>
-	<string.h>
-	<cmath>
-

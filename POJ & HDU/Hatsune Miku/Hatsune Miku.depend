@@ -1,7 +1,0 @@
-# depslib dependency file v1.0
-1472474766 source:/home/ph0en1x/桌面/Hatsune Miku/main.cpp
-	<iostream>
-	<stdio.h>
-	<algorithm>
-	<string.h>
-

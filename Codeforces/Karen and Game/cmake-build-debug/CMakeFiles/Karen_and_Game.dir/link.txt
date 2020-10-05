@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/Karen_and_Game.dir/main.cpp.o  -o Karen_and_Game 

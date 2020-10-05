@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/Makes_And_The_Product.dir/main.cpp.o  -o Makes_And_The_Product 

@@ -1,7 +1,0 @@
-# depslib dependency file v1.0
-1469705392 source:c:\users\ljc\desktop\bubble sort\main.cpp
-	<iostream>
-	<stdio.h>
-	<string.h>
-	<algorithm>
-

@@ -1,7 +1,0 @@
-# depslib dependency file v1.0
-1469105407 source:c:\users\ljc\desktop\acperience\main.cpp
-	<iostream>
-	<stdio.h>
-	<algorithm>
-	<string.h>
-

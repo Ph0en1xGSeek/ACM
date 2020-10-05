@@ -1,7 +1,0 @@
-# depslib dependency file v1.0
-1439970393 source:c:\users\ph0en1x\desktop\ultra-quicksort\main.cpp
-	<iostream>
-	<stdio.h>
-	<cstring>
-	<algorithm>
-

@@ -1,7 +1,0 @@
-# depslib dependency file v1.0
-1498142197 source:d:\acm\lotus and characters\main.cpp
-	<iostream>
-	<stdio.h>
-	<algorithm>
-	<string.h>
-

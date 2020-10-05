@@ -1,7 +1,0 @@
-# depslib dependency file v1.0
-1502364639 source:d:\acm\sagheer and crossroads\main.cpp
-	<iostream>
-	<stdio.h>
-	<algorithm>
-	<string.h>
-

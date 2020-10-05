@@ -1,8 +1,0 @@
-# depslib dependency file v1.0
-1469769171 source:c:\users\ljc\desktop\earthquake damage\main.cpp
-	<iostream>
-	<stdio.h>
-	<algorithm>
-	<string.h>
-	<queue>
-
