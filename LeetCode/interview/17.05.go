@@ -31,3 +31,33 @@ public:
         return res;
     }
 };
+
+
+import "unicode"
+
+func findLongestSubarray(array []string) []string {
+    size := len(array)
+    cnt := 0
+    mp := make(map[int]int)
+    mp[0] = -1
+    from, to := 0, 0
+    mx_len := 0
+    for i := 0; i < size; i++ {
+        if unicode.IsLetter(rune(array[i][0])) {
+            cnt++
+        }else {
+            cnt--
+        }
+        pos, ok := mp[cnt]
+        if ok {
+            if i - pos > mx_len {
+                mx_len = i - pos
+                from = pos + 1
+                to = i + 1
+            }
+        }else {
+            mp[cnt] = i
+        }
+    }
+    return array[from: to]
+}
