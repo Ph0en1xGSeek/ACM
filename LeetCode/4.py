@@ -79,3 +79,39 @@ public:
         }
     }
 };
+
+
+
+class Solution {
+public:
+    double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
+        int n = nums1.size();
+        int m = nums2.size();
+        vector<int> *a = &nums1;
+        vector<int> *b = &nums2;
+        if (n > m) {
+            swap(a, b);
+            swap(n, m);
+        }
+        int left = 0;
+        int right = n;
+        while(left <= right) {
+            int i = (left + right) >> 1;
+            int j = ((m + n + 1) >> 1) - i;
+            if (i == 0 || (*a)[i-1] <= (*b)[j]) {
+                left = i + 1;
+            } else {
+                right = i - 1;
+            }
+        }
+        int i = left - 1;
+        int j = ((m + n + 1) >> 1) - i;
+        int left_i = i == 0 ? INT_MIN : (*a)[i - 1];
+        int left_j = j == 0 ? INT_MIN : (*b)[j - 1];
+        int right_i = i == n ? INT_MAX : (*a)[i];
+        int right_j = j == m ? INT_MAX : (*b)[j];
+        int left_max = max(left_i, left_j);
+        int right_min = min(right_i, right_j);
+        return ((n + m) & 1) ? left_max : ((left_max + right_min) / 2.0);
+    }
+};
