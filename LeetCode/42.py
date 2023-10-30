@@ -25,3 +25,25 @@ class Solution:
                 result += maxR - height[r]
                 r -= 1
         return result
+
+class Solution {
+public:
+    int trap(vector<int>& height) {
+        int size = height.size();
+        int left = 0;
+        int right = size - 1;
+        int total = 0;
+        int maxLeft = 0;
+        int maxRight = 0;
+        while (left <= right) {
+            maxLeft = max(maxLeft, height[left]);
+            maxRight = max(maxRight, height[right]);
+            if (height[left] < height[right]) {
+                total += maxLeft - height[left++];
+            } else {
+                total += maxRight - height[right--];
+            }
+        }
+        return total;
+    }
+};
