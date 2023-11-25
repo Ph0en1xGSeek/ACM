@@ -42,3 +42,59 @@ public:
         return ((1<<(max_deep)) - 1 + cnt);
     }
 };
+
+
+
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
+public:
+    int countNodes(TreeNode* root) {
+        if (root == nullptr) {
+            return 0;
+        }
+        if (root -> left == nullptr) {
+            return 1;
+        }
+        int deep = 0;
+        TreeNode *cur = root;
+        while (cur -> left != nullptr) {
+            cur = cur -> left;
+            ++deep;
+        }
+        int low = (1 << deep);
+        int high = (1 << (deep + 1));
+        while (low < high) {
+            int mid = ((high - low) >> 1) + low;
+            if (exists(root, deep, mid)) {
+                low = mid + 1;
+            } else {
+                high = mid;
+            }
+        }
+        return low - 1;
+    }
+
+    bool exists(TreeNode *root, const int &deep, int node) {
+        int bit = (1 << (deep - 1));
+        TreeNode *cur = root;
+        while (cur != nullptr && bit > 0) {
+            if (node & bit) {
+                cur = cur -> right;
+            } else {
+                cur = cur -> left;
+            }
+            bit >>= 1;
+        }
+        return cur != nullptr;
+    }
+};

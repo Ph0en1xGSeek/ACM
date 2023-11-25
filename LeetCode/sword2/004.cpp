@@ -13,3 +13,19 @@ public:
         return one;
     }
 };
+
+
+class Solution {
+public:
+    int singleNumber(vector<int>& nums) {
+        int one = 0, two = 0, three;
+        for (auto num : nums) {
+            two |= (one & num);
+            one ^= num;
+            three = (two & one);
+            two &= (~three);
+            one &= (~three);
+        }
+        return one;
+    }
+};
