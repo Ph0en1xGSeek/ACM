@@ -20,3 +20,21 @@ public:
         return ans;
     }
 };
+
+class Solution {
+public:
+    int lengthOfLongestSubstring(string s) {
+        int size = s.length();
+        vector<int> last_appear(128, -1);
+        int left = 0;
+        int ans = 0;
+        for (int i = 0; i < size; ++i) {
+            if (last_appear[s[i]] >= left) {
+                left = last_appear[s[i]] + 1;
+            }
+            last_appear[s[i]] = i;
+            ans = max(ans, i - left + 1);
+        }
+        return ans;
+    }
+};

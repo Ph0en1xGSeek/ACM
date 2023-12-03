@@ -51,3 +51,23 @@ public:
         return res;
     }
 };
+
+
+class Solution {
+public:
+    vector<int> findDuplicates(vector<int>& nums) {
+        int size = nums.size();
+        vector<int> ans;
+        for (int i = 0; i < size; ++i) {
+            while (nums[nums[i] - 1] != nums[i]) {
+                swap(nums[nums[i] - 1], nums[i]);
+            }
+        }
+        for (int i = 0; i < size; ++i) {
+            if (nums[i] - 1 != i) {
+                ans.push_back(nums[i]);
+            }
+        }
+        return ans;
+    }
+};
